@@ -1,0 +1,5 @@
+E:\Downloads\09. Defensive-Programming-and-Exceptions-Homework\Assertions-and-Exceptions\Exceptions\bin\Debug\Exceptions-Homework.exe
+E:\Downloads\09. Defensive-Programming-and-Exceptions-Homework\Assertions-and-Exceptions\Exceptions\bin\Debug\Exceptions-Homework.pdb
+E:\Downloads\09. Defensive-Programming-and-Exceptions-Homework\Assertions-and-Exceptions\Exceptions\obj\Debug\Exceptions.csprojResolveAssemblyReference.cache
+E:\Downloads\09. Defensive-Programming-and-Exceptions-Homework\Assertions-and-Exceptions\Exceptions\obj\Debug\Exceptions-Homework.exe
+E:\Downloads\09. Defensive-Programming-and-Exceptions-Homework\Assertions-and-Exceptions\Exceptions\obj\Debug\Exceptions-Homework.pdb
