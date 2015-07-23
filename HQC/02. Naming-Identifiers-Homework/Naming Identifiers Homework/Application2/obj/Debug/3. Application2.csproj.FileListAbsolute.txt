@@ -1,0 +1,10 @@
+E:\Downloads\New folder\Naming Identifiers Homework\Application2\bin\Debug\Application2.exe.config
+E:\Downloads\02. Naming-Identifiers-Homework\Naming Identifiers Homework\Application2\bin\Debug\Application2.exe.config
+E:\Downloads\02. Naming-Identifiers-Homework\Naming Identifiers Homework\Application2\bin\Debug\Application2.exe
+E:\Downloads\02. Naming-Identifiers-Homework\Naming Identifiers Homework\Application2\bin\Debug\Application2.pdb
+E:\Downloads\02. Naming-Identifiers-Homework\Naming Identifiers Homework\Application2\obj\Debug\3. Application2.csprojResolveAssemblyReference.cache
+E:\Downloads\02. Naming-Identifiers-Homework\Naming Identifiers Homework\Application2\obj\Debug\Application2.exe
+E:\Downloads\02. Naming-Identifiers-Homework\Naming Identifiers Homework\Application2\obj\Debug\Application2.pdb
+E:\Downloads\02. Naming-Identifiers-Homework - Copy\Naming Identifiers Homework\Application2\bin\Debug\Application2.exe.config
+E:\Downloads\02. Naming-Identifiers-Homework - Copy\Naming Identifiers Homework\Application2\obj\Debug\Application2.exe
+E:\Downloads\02. Naming-Identifiers-Homework - Copy\Naming Identifiers Homework\Application2\obj\Debug\Application2.pdb

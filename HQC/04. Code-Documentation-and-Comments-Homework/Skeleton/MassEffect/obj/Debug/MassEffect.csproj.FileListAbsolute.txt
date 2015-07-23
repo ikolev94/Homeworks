@@ -1,0 +1,6 @@
+E:\Downloads\04. Code-Documentation-and-Comments-Homework\Skeleton\MassEffect\bin\Debug\MassEffect.exe.config
+E:\Downloads\04. Code-Documentation-and-Comments-Homework\Skeleton\MassEffect\bin\Debug\MassEffect.exe
+E:\Downloads\04. Code-Documentation-and-Comments-Homework\Skeleton\MassEffect\bin\Debug\MassEffect.pdb
+E:\Downloads\04. Code-Documentation-and-Comments-Homework\Skeleton\MassEffect\obj\Debug\MassEffect.csprojResolveAssemblyReference.cache
+E:\Downloads\04. Code-Documentation-and-Comments-Homework\Skeleton\MassEffect\obj\Debug\MassEffect.exe
+E:\Downloads\04. Code-Documentation-and-Comments-Homework\Skeleton\MassEffect\obj\Debug\MassEffect.pdb

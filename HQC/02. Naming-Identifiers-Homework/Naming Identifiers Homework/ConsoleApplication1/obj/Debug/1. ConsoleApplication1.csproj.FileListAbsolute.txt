@@ -1,0 +1,9 @@
+E:\Downloads\02. Naming-Identifiers-Homework\Naming Identifiers Homework\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+E:\Downloads\02. Naming-Identifiers-Homework\Naming Identifiers Homework\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+E:\Downloads\02. Naming-Identifiers-Homework\Naming Identifiers Homework\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+E:\Downloads\02. Naming-Identifiers-Homework\Naming Identifiers Homework\ConsoleApplication1\obj\Debug\1. ConsoleApplication1.csprojResolveAssemblyReference.cache
+E:\Downloads\02. Naming-Identifiers-Homework\Naming Identifiers Homework\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+E:\Downloads\02. Naming-Identifiers-Homework\Naming Identifiers Homework\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+E:\Downloads\02. Naming-Identifiers-Homework - Copy\Naming Identifiers Homework\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+E:\Downloads\02. Naming-Identifiers-Homework - Copy\Naming Identifiers Homework\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+E:\Downloads\02. Naming-Identifiers-Homework - Copy\Naming Identifiers Homework\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
