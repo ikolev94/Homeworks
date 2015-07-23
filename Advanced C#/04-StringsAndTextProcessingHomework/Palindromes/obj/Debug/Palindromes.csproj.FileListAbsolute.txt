@@ -1,0 +1,6 @@
+E:\New folder\StringsAndTextProcessingHomework\Palindromes\bin\Debug\Palindromes.exe.config
+E:\New folder\StringsAndTextProcessingHomework\Palindromes\bin\Debug\Palindromes.exe
+E:\New folder\StringsAndTextProcessingHomework\Palindromes\bin\Debug\Palindromes.pdb
+E:\New folder\StringsAndTextProcessingHomework\Palindromes\obj\Debug\Palindromes.csprojResolveAssemblyReference.cache
+E:\New folder\StringsAndTextProcessingHomework\Palindromes\obj\Debug\Palindromes.exe
+E:\New folder\StringsAndTextProcessingHomework\Palindromes\obj\Debug\Palindromes.pdb

@@ -1,0 +1,6 @@
+E:\New folder\StringsAndTextProcessingHomework\problem4\bin\Debug\problem4.exe.config
+E:\New folder\StringsAndTextProcessingHomework\problem4\bin\Debug\problem4.exe
+E:\New folder\StringsAndTextProcessingHomework\problem4\bin\Debug\problem4.pdb
+E:\New folder\StringsAndTextProcessingHomework\problem4\obj\Debug\problem4.csprojResolveAssemblyReference.cache
+E:\New folder\StringsAndTextProcessingHomework\problem4\obj\Debug\problem4.exe
+E:\New folder\StringsAndTextProcessingHomework\problem4\obj\Debug\problem4.pdb

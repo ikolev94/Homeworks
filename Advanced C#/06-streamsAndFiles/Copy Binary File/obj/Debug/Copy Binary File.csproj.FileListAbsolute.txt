@@ -1,0 +1,6 @@
+E:\New folder\streamsAndFiles\Copy Binary File\bin\Debug\Copy Binary File.exe.config
+E:\New folder\streamsAndFiles\Copy Binary File\bin\Debug\Copy Binary File.exe
+E:\New folder\streamsAndFiles\Copy Binary File\bin\Debug\Copy Binary File.pdb
+E:\New folder\streamsAndFiles\Copy Binary File\obj\Debug\Copy Binary File.csprojResolveAssemblyReference.cache
+E:\New folder\streamsAndFiles\Copy Binary File\obj\Debug\Copy Binary File.exe
+E:\New folder\streamsAndFiles\Copy Binary File\obj\Debug\Copy Binary File.pdb

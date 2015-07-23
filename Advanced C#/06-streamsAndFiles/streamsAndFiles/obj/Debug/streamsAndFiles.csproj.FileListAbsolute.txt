@@ -1,0 +1,9 @@
+E:\New folder\streamsAndFiles\streamsAndFiles\bin\Debug\streamsAndFiles.exe.config
+E:\New folder\streamsAndFiles\streamsAndFiles\bin\Debug\streamsAndFiles.exe
+E:\New folder\streamsAndFiles\streamsAndFiles\bin\Debug\streamsAndFiles.pdb
+E:\New folder\streamsAndFiles\streamsAndFiles\obj\Debug\streamsAndFiles.csprojResolveAssemblyReference.cache
+E:\New folder\streamsAndFiles\streamsAndFiles\obj\Debug\streamsAndFiles.exe
+E:\New folder\streamsAndFiles\streamsAndFiles\obj\Debug\streamsAndFiles.pdb
+E:\New folder\Homework\streamsAndFiles\streamsAndFiles\bin\Debug\streamsAndFiles.exe.config
+E:\New folder\Homework\streamsAndFiles\streamsAndFiles\obj\Debug\streamsAndFiles.exe
+E:\New folder\Homework\streamsAndFiles\streamsAndFiles\obj\Debug\streamsAndFiles.pdb

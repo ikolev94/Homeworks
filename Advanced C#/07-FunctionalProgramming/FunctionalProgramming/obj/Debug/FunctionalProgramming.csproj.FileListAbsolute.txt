@@ -1,0 +1,6 @@
+E:\New folder\FunctionalProgramming\FunctionalProgramming\bin\Debug\FunctionalProgramming.exe.config
+E:\New folder\FunctionalProgramming\FunctionalProgramming\bin\Debug\FunctionalProgramming.exe
+E:\New folder\FunctionalProgramming\FunctionalProgramming\bin\Debug\FunctionalProgramming.pdb
+E:\New folder\FunctionalProgramming\FunctionalProgramming\obj\Debug\FunctionalProgramming.csprojResolveAssemblyReference.cache
+E:\New folder\FunctionalProgramming\FunctionalProgramming\obj\Debug\FunctionalProgramming.exe
+E:\New folder\FunctionalProgramming\FunctionalProgramming\obj\Debug\FunctionalProgramming.pdb

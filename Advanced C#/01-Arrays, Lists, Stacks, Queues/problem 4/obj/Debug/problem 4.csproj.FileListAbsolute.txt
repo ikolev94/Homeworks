@@ -1,0 +1,5 @@
+E:\New folder\Solution1\problem 4\bin\Debug\problem 4.exe.config
+E:\New folder\Solution1\problem 4\bin\Debug\problem 4.exe
+E:\New folder\Solution1\problem 4\bin\Debug\problem 4.pdb
+E:\New folder\Solution1\problem 4\obj\Debug\problem 4.exe
+E:\New folder\Solution1\problem 4\obj\Debug\problem 4.pdb

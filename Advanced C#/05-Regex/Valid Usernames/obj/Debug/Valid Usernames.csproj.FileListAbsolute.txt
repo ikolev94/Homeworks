@@ -1,0 +1,6 @@
+E:\New folder\Regex\Valid Usernames\bin\Debug\Valid Usernames.exe.config
+E:\New folder\Regex\Valid Usernames\bin\Debug\Valid Usernames.exe
+E:\New folder\Regex\Valid Usernames\bin\Debug\Valid Usernames.pdb
+E:\New folder\Regex\Valid Usernames\obj\Debug\Valid Usernames.csprojResolveAssemblyReference.cache
+E:\New folder\Regex\Valid Usernames\obj\Debug\Valid Usernames.exe
+E:\New folder\Regex\Valid Usernames\obj\Debug\Valid Usernames.pdb

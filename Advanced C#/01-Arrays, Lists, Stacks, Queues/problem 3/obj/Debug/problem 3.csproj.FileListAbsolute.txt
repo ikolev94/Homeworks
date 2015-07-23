@@ -1,0 +1,6 @@
+E:\New folder\Solution1\problem 3\obj\Debug\problem 3.csprojResolveAssemblyReference.cache
+E:\New folder\Solution1\problem 3\bin\Debug\problem 3.exe.config
+E:\New folder\Solution1\problem 3\bin\Debug\problem 3.exe
+E:\New folder\Solution1\problem 3\bin\Debug\problem 3.pdb
+E:\New folder\Solution1\problem 3\obj\Debug\problem 3.exe
+E:\New folder\Solution1\problem 3\obj\Debug\problem 3.pdb

@@ -1,0 +1,6 @@
+E:\New folder\streamsAndFiles\Slicing File\bin\Debug\Slicing File.exe.config
+E:\New folder\streamsAndFiles\Slicing File\obj\Debug\Slicing File.csprojResolveAssemblyReference.cache
+E:\New folder\streamsAndFiles\Slicing File\bin\Debug\Slicing File.exe
+E:\New folder\streamsAndFiles\Slicing File\bin\Debug\Slicing File.pdb
+E:\New folder\streamsAndFiles\Slicing File\obj\Debug\Slicing File.exe
+E:\New folder\streamsAndFiles\Slicing File\obj\Debug\Slicing File.pdb

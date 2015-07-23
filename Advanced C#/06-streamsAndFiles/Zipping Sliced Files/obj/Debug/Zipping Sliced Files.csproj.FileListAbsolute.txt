@@ -1,0 +1,6 @@
+E:\New folder\streamsAndFiles\Zipping Sliced Files\bin\Debug\Zipping Sliced Files.exe.config
+E:\New folder\streamsAndFiles\Zipping Sliced Files\bin\Debug\Zipping Sliced Files.exe
+E:\New folder\streamsAndFiles\Zipping Sliced Files\bin\Debug\Zipping Sliced Files.pdb
+E:\New folder\streamsAndFiles\Zipping Sliced Files\obj\Debug\Zipping Sliced Files.csprojResolveAssemblyReference.cache
+E:\New folder\streamsAndFiles\Zipping Sliced Files\obj\Debug\Zipping Sliced Files.exe
+E:\New folder\streamsAndFiles\Zipping Sliced Files\obj\Debug\Zipping Sliced Files.pdb

@@ -1,0 +1,6 @@
+E:\New folder\StringsAndTextProcessingHomework\Letters change Numbers\bin\Debug\Letters change Numbers.exe.config
+E:\New folder\StringsAndTextProcessingHomework\Letters change Numbers\bin\Debug\Letters change Numbers.exe
+E:\New folder\StringsAndTextProcessingHomework\Letters change Numbers\bin\Debug\Letters change Numbers.pdb
+E:\New folder\StringsAndTextProcessingHomework\Letters change Numbers\obj\Debug\Letters change Numbers.csprojResolveAssemblyReference.cache
+E:\New folder\StringsAndTextProcessingHomework\Letters change Numbers\obj\Debug\Letters change Numbers.exe
+E:\New folder\StringsAndTextProcessingHomework\Letters change Numbers\obj\Debug\Letters change Numbers.pdb

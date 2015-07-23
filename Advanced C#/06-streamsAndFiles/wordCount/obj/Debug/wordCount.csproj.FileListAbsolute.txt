@@ -1,0 +1,6 @@
+E:\New folder\streamsAndFiles\wordCount\bin\Debug\wordCount.exe.config
+E:\New folder\streamsAndFiles\wordCount\bin\Debug\wordCount.exe
+E:\New folder\streamsAndFiles\wordCount\bin\Debug\wordCount.pdb
+E:\New folder\streamsAndFiles\wordCount\obj\Debug\wordCount.csprojResolveAssemblyReference.cache
+E:\New folder\streamsAndFiles\wordCount\obj\Debug\wordCount.exe
+E:\New folder\streamsAndFiles\wordCount\obj\Debug\wordCount.pdb

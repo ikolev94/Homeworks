@@ -1,0 +1,12 @@
+line:0 visual
+line:1 studio
+line:2 C
+line:3 #
+line:4 test
+line:5 apple
+line:6 hi
+line:7 hello
+line:8 zdr
+line:9 name
+line:10 12345
+                            

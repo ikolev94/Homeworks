@@ -1,0 +1,6 @@
+E:\New folder\Regex\raplace a tag\bin\Debug\raplace a tag.exe.config
+E:\New folder\Regex\raplace a tag\bin\Debug\raplace a tag.exe
+E:\New folder\Regex\raplace a tag\bin\Debug\raplace a tag.pdb
+E:\New folder\Regex\raplace a tag\obj\Debug\raplace a tag.csprojResolveAssemblyReference.cache
+E:\New folder\Regex\raplace a tag\obj\Debug\raplace a tag.exe
+E:\New folder\Regex\raplace a tag\obj\Debug\raplace a tag.pdb

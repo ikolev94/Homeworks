@@ -1,0 +1,5 @@
+E:\New folder\homeworkMethods\problem3\bin\Debug\problem3.exe.config
+E:\New folder\homeworkMethods\problem3\bin\Debug\problem3.exe
+E:\New folder\homeworkMethods\problem3\bin\Debug\problem3.pdb
+E:\New folder\homeworkMethods\problem3\obj\Debug\problem3.exe
+E:\New folder\homeworkMethods\problem3\obj\Debug\problem3.pdb

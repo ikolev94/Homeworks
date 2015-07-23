@@ -1,0 +1,6 @@
+E:\New folder\homeworkMethods\homeworkMethods\bin\Debug\homeworkMethods.exe.config
+E:\New folder\homeworkMethods\homeworkMethods\bin\Debug\homeworkMethods.exe
+E:\New folder\homeworkMethods\homeworkMethods\bin\Debug\homeworkMethods.pdb
+E:\New folder\homeworkMethods\homeworkMethods\obj\Debug\homeworkMethods.csprojResolveAssemblyReference.cache
+E:\New folder\homeworkMethods\homeworkMethods\obj\Debug\homeworkMethods.exe
+E:\New folder\homeworkMethods\homeworkMethods\obj\Debug\homeworkMethods.pdb

@@ -1,0 +1,6 @@
+E:\New folder\Homework\streamsAndFiles\problem7\bin\Debug\problem7.exe.config
+E:\New folder\Homework\streamsAndFiles\problem7\obj\Debug\problem7.csprojResolveAssemblyReference.cache
+E:\New folder\Homework\streamsAndFiles\problem7\bin\Debug\problem7.exe
+E:\New folder\Homework\streamsAndFiles\problem7\bin\Debug\problem7.pdb
+E:\New folder\Homework\streamsAndFiles\problem7\obj\Debug\problem7.exe
+E:\New folder\Homework\streamsAndFiles\problem7\obj\Debug\problem7.pdb

@@ -1,0 +1,6 @@
+E:\New folder\MatrixDictionaryHesh\problem3\bin\Debug\problem3.exe.config
+E:\New folder\MatrixDictionaryHesh\problem3\bin\Debug\problem3.exe
+E:\New folder\MatrixDictionaryHesh\problem3\bin\Debug\problem3.pdb
+E:\New folder\MatrixDictionaryHesh\problem3\obj\Debug\problem3.csprojResolveAssemblyReference.cache
+E:\New folder\MatrixDictionaryHesh\problem3\obj\Debug\problem3.exe
+E:\New folder\MatrixDictionaryHesh\problem3\obj\Debug\problem3.pdb

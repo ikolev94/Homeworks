@@ -1,0 +1,6 @@
+E:\New folder\Regex\Problem 3. Extract Emails\bin\Debug\Problem_3.Extract_Emails.exe.config
+E:\New folder\Regex\Problem 3. Extract Emails\bin\Debug\Problem_3.Extract_Emails.exe
+E:\New folder\Regex\Problem 3. Extract Emails\bin\Debug\Problem_3.Extract_Emails.pdb
+E:\New folder\Regex\Problem 3. Extract Emails\obj\Debug\Problem 3. Extract Emails.csprojResolveAssemblyReference.cache
+E:\New folder\Regex\Problem 3. Extract Emails\obj\Debug\Problem_3.Extract_Emails.exe
+E:\New folder\Regex\Problem 3. Extract Emails\obj\Debug\Problem_3.Extract_Emails.pdb

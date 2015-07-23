@@ -1,0 +1,6 @@
+E:\New folder\MatrixDictionaryHesh\MatrixDictionaryHesh\bin\Debug\MatrixDictionaryHesh.exe.config
+E:\New folder\MatrixDictionaryHesh\MatrixDictionaryHesh\bin\Debug\MatrixDictionaryHesh.exe
+E:\New folder\MatrixDictionaryHesh\MatrixDictionaryHesh\bin\Debug\MatrixDictionaryHesh.pdb
+E:\New folder\MatrixDictionaryHesh\MatrixDictionaryHesh\obj\Debug\MatrixDictionaryHesh.csprojResolveAssemblyReference.cache
+E:\New folder\MatrixDictionaryHesh\MatrixDictionaryHesh\obj\Debug\MatrixDictionaryHesh.exe
+E:\New folder\MatrixDictionaryHesh\MatrixDictionaryHesh\obj\Debug\MatrixDictionaryHesh.pdb

@@ -1,0 +1,6 @@
+E:\New folder\Regex\Sentence Extractor\bin\Debug\Sentence Extractor.exe.config
+E:\New folder\Regex\Sentence Extractor\bin\Debug\Sentence Extractor.exe
+E:\New folder\Regex\Sentence Extractor\bin\Debug\Sentence Extractor.pdb
+E:\New folder\Regex\Sentence Extractor\obj\Debug\Sentence Extractor.csprojResolveAssemblyReference.cache
+E:\New folder\Regex\Sentence Extractor\obj\Debug\Sentence Extractor.exe
+E:\New folder\Regex\Sentence Extractor\obj\Debug\Sentence Extractor.pdb

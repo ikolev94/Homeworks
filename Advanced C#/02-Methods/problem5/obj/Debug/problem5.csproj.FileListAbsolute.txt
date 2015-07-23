@@ -1,0 +1,6 @@
+E:\New folder\homeworkMethods\problem5\bin\Debug\problem5.exe.config
+E:\New folder\homeworkMethods\problem5\bin\Debug\problem5.exe
+E:\New folder\homeworkMethods\problem5\bin\Debug\problem5.pdb
+E:\New folder\homeworkMethods\problem5\obj\Debug\problem5.exe
+E:\New folder\homeworkMethods\problem5\obj\Debug\problem5.pdb
+E:\New folder\homeworkMethods\problem5\obj\Debug\problem5.csprojResolveAssemblyReference.cache

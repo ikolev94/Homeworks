@@ -1,0 +1,8 @@
+E:\New folder\streamsAndFiles\lineNumbers\bin\Debug\lineNumbers.exe.config
+E:\New folder\streamsAndFiles\lineNumbers\bin\Debug\lineNumbers.exe
+E:\New folder\streamsAndFiles\lineNumbers\bin\Debug\lineNumbers.pdb
+E:\New folder\streamsAndFiles\lineNumbers\obj\Debug\lineNumbers.exe
+E:\New folder\streamsAndFiles\lineNumbers\obj\Debug\lineNumbers.pdb
+E:\New folder\Homework\streamsAndFiles\lineNumbers\bin\Debug\lineNumbers.exe.config
+E:\New folder\Homework\streamsAndFiles\lineNumbers\obj\Debug\lineNumbers.exe
+E:\New folder\Homework\streamsAndFiles\lineNumbers\obj\Debug\lineNumbers.pdb

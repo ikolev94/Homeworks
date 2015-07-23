@@ -1,0 +1,6 @@
+E:\New folder\MatrixDictionaryHesh\pattentB\bin\Debug\pattentB.exe.config
+E:\New folder\MatrixDictionaryHesh\pattentB\bin\Debug\pattentB.exe
+E:\New folder\MatrixDictionaryHesh\pattentB\bin\Debug\pattentB.pdb
+E:\New folder\MatrixDictionaryHesh\pattentB\obj\Debug\pattentB.exe
+E:\New folder\MatrixDictionaryHesh\pattentB\obj\Debug\pattentB.pdb
+E:\New folder\MatrixDictionaryHesh\pattentB\obj\Debug\pattentB.csprojResolveAssemblyReference.cache
