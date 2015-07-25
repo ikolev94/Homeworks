@@ -1,0 +1,5 @@
+E:\Soft\Delegates and Events\Student Class\bin\Debug\Student Class.exe.config
+E:\Soft\Delegates and Events\Student Class\bin\Debug\Student Class.exe
+E:\Soft\Delegates and Events\Student Class\bin\Debug\Student Class.pdb
+E:\Soft\Delegates and Events\Student Class\obj\Debug\Student Class.exe
+E:\Soft\Delegates and Events\Student Class\obj\Debug\Student Class.pdb

@@ -1,0 +1,6 @@
+E:\New folder\Other Types in OOP\Generic List\bin\Debug\Generic List.exe.config
+E:\New folder\Other Types in OOP\Generic List\bin\Debug\Generic List.exe
+E:\New folder\Other Types in OOP\Generic List\bin\Debug\Generic List.pdb
+E:\New folder\Other Types in OOP\Generic List\obj\Debug\Generic List.csprojResolveAssemblyReference.cache
+E:\New folder\Other Types in OOP\Generic List\obj\Debug\Generic List.exe
+E:\New folder\Other Types in OOP\Generic List\obj\Debug\Generic List.pdb

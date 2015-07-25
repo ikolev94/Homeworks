@@ -1,0 +1,6 @@
+E:\New folder\Defining Classes\PC Catalog\bin\Debug\PC Catalog.exe.config
+E:\New folder\Defining Classes\PC Catalog\bin\Debug\PC Catalog.exe
+E:\New folder\Defining Classes\PC Catalog\bin\Debug\PC Catalog.pdb
+E:\New folder\Defining Classes\PC Catalog\obj\Debug\PC Catalog.csprojResolveAssemblyReference.cache
+E:\New folder\Defining Classes\PC Catalog\obj\Debug\PC Catalog.exe
+E:\New folder\Defining Classes\PC Catalog\obj\Debug\PC Catalog.pdb

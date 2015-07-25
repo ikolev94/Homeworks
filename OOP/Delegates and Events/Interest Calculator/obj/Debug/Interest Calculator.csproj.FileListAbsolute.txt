@@ -1,0 +1,6 @@
+E:\Soft\Delegates and Events\Interest Calculator\bin\Debug\Interest Calculator.exe.config
+E:\Soft\Delegates and Events\Interest Calculator\bin\Debug\Interest Calculator.exe
+E:\Soft\Delegates and Events\Interest Calculator\bin\Debug\Interest Calculator.pdb
+E:\Soft\Delegates and Events\Interest Calculator\obj\Debug\Interest Calculator.csprojResolveAssemblyReference.cache
+E:\Soft\Delegates and Events\Interest Calculator\obj\Debug\Interest Calculator.exe
+E:\Soft\Delegates and Events\Interest Calculator\obj\Debug\Interest Calculator.pdb

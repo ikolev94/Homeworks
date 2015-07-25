@@ -1,0 +1,33 @@
+1) Which .NET data types are value types? Which types are reference types?
+value types:
+All numeric data types
+Boolean , Char, and Date
+All structures, even if their members are reference types
+Enumerations, since their underlying type is always SByte, Short, Integer, Long, Byte, UShort, UInteger, or ULong
+
+reference types:
+String
+All arrays, even if their elements are value types
+Class types, such as Form
+Delegates
+
+2) How do value and reference types differ when assigned to a variable?
+http://www.albahari.com/valuevsreftypes.aspx
+
+3) How do value and reference types behave when passed as argument to a method?
+https://www.safaribooksonline.com/library/view/head-first-java/0596009208/ch04.html
+
+4) Where in memory are value types allocated? Where are reference types allocated?
+value types - Stack
+reference types - Heap
+http://www.codeproject.com/Articles/76153/Six-important-NET-concepts-Stack-heap-value-types
+
+5) What is data mutation? Can value types be mutated? Can reference types be mutated?
+http://stackoverflow.com/questions/7088108/in-c-sharp-are-value-types-mutable-or-immutable
+
+6) What is the difference between mutating and setting (assigning) a variable? Give examples.
+http://stackoverflow.com/questions/6236569/string-assignment-in-c-sharp
+
+7) What are the out and ref keywords used for? In what do they differ?
+https://msdn.microsoft.com/en-us/library/14akc2c7.aspx
+https://msdn.microsoft.com/en-us/library/t3c3bfhx.aspx

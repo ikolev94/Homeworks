@@ -1,0 +1,6 @@
+E:\New folder\Other Types in OOP\Problem 2. Fraction Calculator\bin\Debug\Problem_2.Fraction_Calculator.exe.config
+E:\New folder\Other Types in OOP\Problem 2. Fraction Calculator\bin\Debug\Problem_2.Fraction_Calculator.exe
+E:\New folder\Other Types in OOP\Problem 2. Fraction Calculator\bin\Debug\Problem_2.Fraction_Calculator.pdb
+E:\New folder\Other Types in OOP\Problem 2. Fraction Calculator\obj\Debug\Problem 2. Fraction Calculator.csprojResolveAssemblyReference.cache
+E:\New folder\Other Types in OOP\Problem 2. Fraction Calculator\obj\Debug\Problem_2.Fraction_Calculator.exe
+E:\New folder\Other Types in OOP\Problem 2. Fraction Calculator\obj\Debug\Problem_2.Fraction_Calculator.pdb

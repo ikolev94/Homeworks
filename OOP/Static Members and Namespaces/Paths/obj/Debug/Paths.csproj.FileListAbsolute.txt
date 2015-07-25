@@ -1,0 +1,6 @@
+E:\New folder\Static Members and Namespaces\Paths\bin\Debug\Paths.exe.config
+E:\New folder\Static Members and Namespaces\Paths\bin\Debug\Paths.exe
+E:\New folder\Static Members and Namespaces\Paths\bin\Debug\Paths.pdb
+E:\New folder\Static Members and Namespaces\Paths\obj\Debug\Paths.csprojResolveAssemblyReference.cache
+E:\New folder\Static Members and Namespaces\Paths\obj\Debug\Paths.exe
+E:\New folder\Static Members and Namespaces\Paths\obj\Debug\Paths.pdb

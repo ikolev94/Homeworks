@@ -1,0 +1,6 @@
+E:\New folder\Defining Classes\Defining Classes\bin\Debug\Defining Classes.exe.config
+E:\New folder\Defining Classes\Defining Classes\bin\Debug\Defining Classes.exe
+E:\New folder\Defining Classes\Defining Classes\bin\Debug\Defining Classes.pdb
+E:\New folder\Defining Classes\Defining Classes\obj\Debug\Defining Classes.csprojResolveAssemblyReference.cache
+E:\New folder\Defining Classes\Defining Classes\obj\Debug\Defining Classes.exe
+E:\New folder\Defining Classes\Defining Classes\obj\Debug\Defining Classes.pdb

@@ -1,0 +1,6 @@
+E:\New folder\Common Type System\Customer\bin\Debug\Customer.exe.config
+E:\New folder\Common Type System\Customer\bin\Debug\Customer.exe
+E:\New folder\Common Type System\Customer\bin\Debug\Customer.pdb
+E:\New folder\Common Type System\Customer\obj\Debug\Customer.csprojResolveAssemblyReference.cache
+E:\New folder\Common Type System\Customer\obj\Debug\Customer.exe
+E:\New folder\Common Type System\Customer\obj\Debug\Customer.pdb

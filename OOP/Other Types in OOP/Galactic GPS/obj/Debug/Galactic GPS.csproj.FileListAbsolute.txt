@@ -1,0 +1,6 @@
+E:\New folder\Other Types in OOP\Galactic GPS\bin\Debug\Galactic GPS.exe.config
+E:\New folder\Other Types in OOP\Galactic GPS\bin\Debug\Galactic GPS.exe
+E:\New folder\Other Types in OOP\Galactic GPS\bin\Debug\Galactic GPS.pdb
+E:\New folder\Other Types in OOP\Galactic GPS\obj\Debug\Galactic GPS.csprojResolveAssemblyReference.cache
+E:\New folder\Other Types in OOP\Galactic GPS\obj\Debug\Galactic GPS.exe
+E:\New folder\Other Types in OOP\Galactic GPS\obj\Debug\Galactic GPS.pdb

@@ -1,0 +1,6 @@
+E:\New folder\Exception Handling\Square Root\bin\Debug\Square Root.exe.config
+E:\New folder\Exception Handling\Square Root\bin\Debug\Square Root.exe
+E:\New folder\Exception Handling\Square Root\bin\Debug\Square Root.pdb
+E:\New folder\Exception Handling\Square Root\obj\Debug\Square Root.csprojResolveAssemblyReference.cache
+E:\New folder\Exception Handling\Square Root\obj\Debug\Square Root.exe
+E:\New folder\Exception Handling\Square Root\obj\Debug\Square Root.pdb

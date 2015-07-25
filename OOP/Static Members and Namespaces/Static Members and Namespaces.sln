@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static Members and Namespaces", "Static Members and Namespaces\Static Members and Namespaces.csproj", "{1B50A45E-6F78-499C-AC1C-77E712F6B27F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paths", "Paths\Paths.csproj", "{5033ADD0-5C22-43A8-B3FE-7482A829B198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namespaces", "Namespaces\Namespaces.csproj", "{6053C587-F765-4CAA-85FC-54B7B020E4E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B50A45E-6F78-499C-AC1C-77E712F6B27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B50A45E-6F78-499C-AC1C-77E712F6B27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B50A45E-6F78-499C-AC1C-77E712F6B27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B50A45E-6F78-499C-AC1C-77E712F6B27F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5033ADD0-5C22-43A8-B3FE-7482A829B198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5033ADD0-5C22-43A8-B3FE-7482A829B198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5033ADD0-5C22-43A8-B3FE-7482A829B198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5033ADD0-5C22-43A8-B3FE-7482A829B198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6053C587-F765-4CAA-85FC-54B7B020E4E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6053C587-F765-4CAA-85FC-54B7B020E4E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6053C587-F765-4CAA-85FC-54B7B020E4E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6053C587-F765-4CAA-85FC-54B7B020E4E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

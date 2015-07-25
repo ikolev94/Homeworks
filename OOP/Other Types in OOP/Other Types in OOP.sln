@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galactic GPS", "Galactic GPS\Galactic GPS.csproj", "{5A9005CB-01D4-4FC4-BEB1-4B564495639D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2. Fraction Calculator", "Problem 2. Fraction Calculator\Problem 2. Fraction Calculator.csproj", "{82781399-EB4E-4F5F-8DE3-71019F6B3D0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic List", "Generic List\Generic List.csproj", "{DD931C95-C24F-459B-9203-3CD5663F53D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A9005CB-01D4-4FC4-BEB1-4B564495639D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A9005CB-01D4-4FC4-BEB1-4B564495639D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A9005CB-01D4-4FC4-BEB1-4B564495639D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A9005CB-01D4-4FC4-BEB1-4B564495639D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82781399-EB4E-4F5F-8DE3-71019F6B3D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82781399-EB4E-4F5F-8DE3-71019F6B3D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82781399-EB4E-4F5F-8DE3-71019F6B3D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82781399-EB4E-4F5F-8DE3-71019F6B3D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD931C95-C24F-459B-9203-3CD5663F53D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD931C95-C24F-459B-9203-3CD5663F53D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD931C95-C24F-459B-9203-3CD5663F53D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD931C95-C24F-459B-9203-3CD5663F53D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

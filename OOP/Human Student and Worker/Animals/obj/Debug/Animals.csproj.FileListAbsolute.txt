@@ -1,0 +1,6 @@
+E:\New folder\Human Student and Worker\Animals\bin\Debug\Animals.exe.config
+E:\New folder\Human Student and Worker\Animals\bin\Debug\Animals.exe
+E:\New folder\Human Student and Worker\Animals\bin\Debug\Animals.pdb
+E:\New folder\Human Student and Worker\Animals\obj\Debug\Animals.csprojResolveAssemblyReference.cache
+E:\New folder\Human Student and Worker\Animals\obj\Debug\Animals.exe
+E:\New folder\Human Student and Worker\Animals\obj\Debug\Animals.pdb

@@ -1,0 +1,6 @@
+E:\New folder\Human Student and Worker\Company Hierarchy\bin\Debug\Company Hierarchy.exe.config
+E:\New folder\Human Student and Worker\Company Hierarchy\bin\Debug\Company Hierarchy.exe
+E:\New folder\Human Student and Worker\Company Hierarchy\bin\Debug\Company Hierarchy.pdb
+E:\New folder\Human Student and Worker\Company Hierarchy\obj\Debug\Company Hierarchy.csprojResolveAssemblyReference.cache
+E:\New folder\Human Student and Worker\Company Hierarchy\obj\Debug\Company Hierarchy.exe
+E:\New folder\Human Student and Worker\Company Hierarchy\obj\Debug\Company Hierarchy.pdb

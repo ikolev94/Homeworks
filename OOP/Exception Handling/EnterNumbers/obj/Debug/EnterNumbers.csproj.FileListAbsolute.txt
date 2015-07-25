@@ -1,0 +1,6 @@
+E:\New folder\Exception Handling\EnterNumbers\bin\Debug\EnterNumbers.exe.config
+E:\New folder\Exception Handling\EnterNumbers\bin\Debug\EnterNumbers.exe
+E:\New folder\Exception Handling\EnterNumbers\bin\Debug\EnterNumbers.pdb
+E:\New folder\Exception Handling\EnterNumbers\obj\Debug\EnterNumbers.csprojResolveAssemblyReference.cache
+E:\New folder\Exception Handling\EnterNumbers\obj\Debug\EnterNumbers.exe
+E:\New folder\Exception Handling\EnterNumbers\obj\Debug\EnterNumbers.pdb
