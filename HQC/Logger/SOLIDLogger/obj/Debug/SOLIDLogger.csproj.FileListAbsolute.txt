@@ -1,0 +1,5 @@
+E:\New folder\Logger\SOLIDLogger\bin\Debug\SOLIDLogger.dll
+E:\New folder\Logger\SOLIDLogger\bin\Debug\SOLIDLogger.pdb
+E:\New folder\Logger\SOLIDLogger\obj\Debug\SOLIDLogger.csprojResolveAssemblyReference.cache
+E:\New folder\Logger\SOLIDLogger\obj\Debug\SOLIDLogger.dll
+E:\New folder\Logger\SOLIDLogger\obj\Debug\SOLIDLogger.pdb

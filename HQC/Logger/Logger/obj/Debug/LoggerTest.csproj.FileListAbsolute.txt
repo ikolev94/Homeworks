@@ -1,0 +1,8 @@
+E:\New folder\Logger\Logger\bin\Debug\Logger.exe.config
+E:\New folder\Logger\Logger\bin\Debug\Logger.exe
+E:\New folder\Logger\Logger\bin\Debug\Logger.pdb
+E:\New folder\Logger\Logger\obj\Debug\LoggerTest.csprojResolveAssemblyReference.cache
+E:\New folder\Logger\Logger\obj\Debug\Logger.exe
+E:\New folder\Logger\Logger\obj\Debug\Logger.pdb
+E:\New folder\Logger\Logger\bin\Debug\SOLIDLogger.dll
+E:\New folder\Logger\Logger\bin\Debug\SOLIDLogger.pdb

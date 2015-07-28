@@ -1,0 +1,2 @@
+E:\New folder\Logger\Logger\bin\Debug\Logger.exe.config
+E:\New folder\Logger\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache
