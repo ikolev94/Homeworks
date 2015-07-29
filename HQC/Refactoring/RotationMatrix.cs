@@ -56,7 +56,7 @@
 
             return false;
         }
-
+        
         public static void FindCell(int[,] arr, out int x, out int y)
         {
             x = 0;
@@ -79,69 +79,27 @@
         {
             var n = InputReader();
 
-            var matrix = FillMartix(n);
+            var matrix = CreateRotationMartix(n);
 
             PrintMatrix(matrix);
         }
 
-        public static int[,] FillMartix(int n)
+        public static int[,] CreateRotationMartix(int n)
         {
             int[,] matrix = new int[n, n];
             int currentValue = 1;
             int row = 0;
             int col = 0;
-            int dx = 1;
-            int dy = 1;
-            while (true)
-            {
-                matrix[row, col] = currentValue;
 
-                if (!Check(matrix, row, col))
-                {
-                    break;
-                }
-
-                if (row + dx >= n || row + dx < 0 || col + dy >= n || col + dy < 0 || matrix[row + dx, col + dy] != 0)
-                {
-                    while (row + dx >= n || row + dx < 0 || col + dy >= n || col + dy < 0 || matrix[row + dx, col + dy] != 0)
-                    {
-                        Change(ref dx, ref dy);
-                    }
-                }
-
-                row += dx;
-                col += dy;
-                currentValue++;
-            }
-
+            FillMatrix(matrix, ref row, ref col, ref currentValue);
             currentValue++;
             FindCell(matrix, out row, out col);
+
             if (row != 0 && col != 0)
             {
-                dx = 1;
-                dy = 1;
-
-                while (true)
-                {
-                    matrix[row, col] = currentValue;
-                    if (!Check(matrix, row, col))
-                    {
-                        break;
-                    }
-
-                    if (row + dx >= n || row + dx < 0 || col + dy >= n || col + dy < 0 || matrix[row + dx, col + dy] != 0)
-                    {
-                        while (row + dx >= n || row + dx < 0 || col + dy >= n || col + dy < 0 || matrix[row + dx, col + dy] != 0)
-                        {
-                            Change(ref dx, ref dy);
-                        }
-                    }
-
-                    row += dx;
-                    col += dy;
-                    currentValue++;
-                }
+                FillMatrix(matrix, ref row, ref col, ref currentValue);
             }
+
             return matrix;
         }
 
@@ -160,7 +118,7 @@
 
                     if (n > 100)
                     {
-                        throw new ArgumentException("Numbre must be smaler than 100 !");
+                        throw new ArgumentException("Number must be smaller than 100 !");
                     }
 
                     return n;
@@ -182,10 +140,35 @@
             {
                 for (int col = 0; col < matrix.GetLength(1); col++)
                 {
-                    Console.Write("{0,3}", matrix[row, col]);
+                    Console.Write("{0,4}", matrix[row, col]);
                 }
 
                 Console.WriteLine();
+            }
+        }
+
+        private static void FillMatrix(int[,] matrix, ref int row, ref int col, ref int currentValue)
+        {
+            int n = matrix.GetLength(0);
+            int rowDirection = 1;
+            int colDirection = 1;
+
+            while (true)
+            {
+                matrix[row, col] = currentValue;
+                if (!Check(matrix, row, col))
+                {
+                    break;
+                }
+
+                while (row + rowDirection >= n || row + rowDirection < 0 || col + colDirection >= n || col + colDirection < 0 || matrix[row + rowDirection, col + colDirection] != 0)
+                {
+                    Change(ref rowDirection, ref colDirection);
+                }
+
+                row += rowDirection;
+                col += colDirection;
+                currentValue++;
             }
         }
     }
