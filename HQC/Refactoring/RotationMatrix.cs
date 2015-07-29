@@ -148,14 +148,32 @@
         public static int InputReader()
         {
             Console.WriteLine("Enter a positive number ");
-            string input = Console.ReadLine();
-            int n = 0;
-            while (!int.TryParse(input, out n) || n < 0 || n > 100)
+            while (true)
             {
-                Console.WriteLine("You haven't entered a correct positive number");
-                input = Console.ReadLine();
+                try
+                {
+                    int n = int.Parse(Console.ReadLine());
+                    if (n < 0)
+                    {
+                        throw new ArgumentException("Number must be positive !");
+                    }
+
+                    if (n > 100)
+                    {
+                        throw new ArgumentException("Numbre must be smaler than 100 !");
+                    }
+
+                    return n;
+                }
+                catch (FormatException exception)
+                {
+                    Console.WriteLine(exception.Message);
+                }
+                catch (ArgumentException exception)
+                {
+                    Console.WriteLine(exception.Message);
+                }
             }
-            return n;
         }
 
         public static void PrintMatrix(int[,] matrix)
