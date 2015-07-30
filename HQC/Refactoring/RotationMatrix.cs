@@ -12,12 +12,11 @@
             {
                 if (directionX[i] == dx && directionY[i] == dy)
                 {
-
                     dx = directionX[(i + 1) % directionX.Length];
                     dy = directionY[(i + 1) % directionY.Length];
                     return;
                 }
-            } 
+            }
         }
 
         public static bool CheckCell(int[,] arr, int x, int y)
@@ -31,7 +30,7 @@
                     dirX[i] = 0;
                 }
 
-                if (y + dirY[i] >= arr.GetLength(0) || y + dirY[i] < 0)
+                if (y + dirY[i] >= arr.GetLength(1) || y + dirY[i] < 0)
                 {
                     dirY[i] = 0;
                 }
@@ -48,18 +47,16 @@
             return false;
         }
 
-        public static void FindEmptyCell(int[,] arr, out int x, out int y)
+        public static void FindEmptyCell(int[,] matrix, ref int row, ref int col)
         {
-            x = 0;
-            y = 0;
-            for (int i = 0; i < arr.GetLength(0); i++)
+            for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                for (int j = 0; j < arr.GetLength(0); j++)
+                for (int j = 0; j < matrix.GetLength(0); j++)
                 {
-                    if (arr[i, j] == 0)
+                    if (matrix[i, j] == 0)
                     {
-                        x = i;
-                        y = j;
+                        row = i;
+                        col = j;
                         return;
                     }
                 }
@@ -84,11 +81,11 @@
 
             currentValue = FillMatrix(matrix, row, col, currentValue);
             currentValue++;
-            FindEmptyCell(matrix, out row, out col);
+            FindEmptyCell(matrix, ref row, ref col);
 
             if (row != 0 && col != 0)
             {
-               FillMatrix(matrix, row, col, currentValue);
+                FillMatrix(matrix, row, col, currentValue);
             }
 
             return matrix;
@@ -138,7 +135,7 @@
             }
         }
 
-        private static int FillMatrix(int[,] matrix,  int row, int col,  int currentValue)
+        private static int FillMatrix(int[,] matrix, int row, int col, int currentValue)
         {
             int n = matrix.GetLength(0);
             int rowDirection = 1;
@@ -147,12 +144,14 @@
             while (true)
             {
                 matrix[row, col] = currentValue;
+                PrintMatrix(matrix);
                 if (!CheckCell(matrix, row, col))
                 {
                     break;
                 }
 
-                while (row + rowDirection >= n || row + rowDirection < 0 || col + colDirection >= n || col + colDirection < 0 || matrix[row + rowDirection, col + colDirection] != 0)
+                while (row + rowDirection >= n || row + rowDirection < 0 || col + colDirection >= n
+                       || col + colDirection < 0 || matrix[row + rowDirection, col + colDirection] != 0)
                 {
                     ChangeDirection(ref rowDirection, ref colDirection);
                 }
@@ -161,6 +160,7 @@
                 col += colDirection;
                 currentValue++;
             }
+
             return currentValue;
         }
     }
