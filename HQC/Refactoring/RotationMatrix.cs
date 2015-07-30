@@ -4,41 +4,41 @@
 
     public class WalkInMatrica
     {
-        public static void ChangeDirection(ref int dx, ref int dy)
+        public static void ChangeDirection(ref int rowDirection, ref int colDirection)
         {
             int[] directionX = { 1, 1, 1, 0, -1, -1, -1, 0 };
             int[] directionY = { 1, 0, -1, -1, -1, 0, 1, 1 };
             for (int i = 0; i < directionX.Length; i++)
             {
-                if (directionX[i] == dx && directionY[i] == dy)
+                if (directionX[i] == rowDirection && directionY[i] == colDirection)
                 {
-                    dx = directionX[(i + 1) % directionX.Length];
-                    dy = directionY[(i + 1) % directionY.Length];
+                    rowDirection = directionX[(i + 1) % directionX.Length];
+                    colDirection = directionY[(i + 1) % directionY.Length];
                     return;
                 }
             }
         }
 
-        public static bool CheckCell(int[,] arr, int x, int y)
+        public static bool CheckCell(int[,] matrix, int x, int y)
         {
-            int[] dirX = { 1, 1, 1, 0, -1, -1, -1, 0 };
-            int[] dirY = { 1, 0, -1, -1, -1, 0, 1, 1 };
-            for (int i = 0; i < 8; i++)
+            int[] directionsX = { 1, 1, 1, 0, -1, -1, -1, 0 };
+            int[] directionsY = { 1, 0, -1, -1, -1, 0, 1, 1 };
+            for (int i = 0; i < directionsX.Length; i++)
             {
-                if (x + dirX[i] >= arr.GetLength(0) || x + dirX[i] < 0)
+                if (x + directionsX[i] >= matrix.GetLength(0) || x + directionsX[i] < 0)
                 {
-                    dirX[i] = 0;
+                    directionsX[i] = 0;
                 }
 
-                if (y + dirY[i] >= arr.GetLength(1) || y + dirY[i] < 0)
+                if (y + directionsY[i] >= matrix.GetLength(1) || y + directionsY[i] < 0)
                 {
-                    dirY[i] = 0;
+                    directionsY[i] = 0;
                 }
             }
 
             for (int i = 0; i < 8; i++)
             {
-                if (arr[x + dirX[i], y + dirY[i]] == 0)
+                if (matrix[x + directionsX[i], y + directionsY[i]] == 0)
                 {
                     return true;
                 }
@@ -51,7 +51,7 @@
         {
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                for (int j = 0; j < matrix.GetLength(0); j++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
                 {
                     if (matrix[i, j] == 0)
                     {
@@ -65,9 +65,9 @@
 
         public static void Main()
         {
-            var n = InputReader();
+            int n = InputReader();
 
-            var matrix = CreateRotationMartix(n);
+            int[,] matrix = CreateRotationMartix(n);
 
             PrintMatrix(matrix);
         }
@@ -80,7 +80,9 @@
             int col = 0;
 
             currentValue = FillMatrix(matrix, row, col, currentValue);
+
             currentValue++;
+
             FindEmptyCell(matrix, ref row, ref col);
 
             if (row != 0 && col != 0)
@@ -140,11 +142,9 @@
             int n = matrix.GetLength(0);
             int rowDirection = 1;
             int colDirection = 1;
-
             while (true)
             {
                 matrix[row, col] = currentValue;
-                PrintMatrix(matrix);
                 if (!CheckCell(matrix, row, col))
                 {
                     break;
