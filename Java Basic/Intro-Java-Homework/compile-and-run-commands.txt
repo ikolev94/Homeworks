@@ -1,0 +1,5 @@
+1
+javac SumTwoNumbers.java
+
+2
+java SumTwoNumbers
