@@ -1,3 +1,7 @@
+body {    
+    font-family: "Tahoma";
+    font-size: 1.5em; 
+}
 #wrapper{
 	border-radius: 10px;
 	position: absolute;
@@ -17,17 +21,21 @@ table{
 }
 td,th{
 	text-align: center;
+    /*border: 2px solid black;*/
 	border-bottom: 2px solid black;
 	border-left: 2px solid black;
 	 padding: 10px 5px 10px 5px; 	
 }
 th{
+    font-size: 1.2em;
 	background-color: #F8C711;
+}
+.host,.guest{
+    width: 200px;
 }
 .host {
     text-align: right;
 }
-
 .guest {
     text-align: left;
 }
@@ -37,6 +45,26 @@ tr:nth-child(odd) td {
 
 tr:nth-child(even) td {
     background: #C8C8C8;
+}
+td:first-child,th:first-child{
+    border-left: none;
+}
+tr:last-child>td{
+    border-bottom: none;
+}
+table tr:last-child td:first-child { 
+    border-bottom-left-radius:8px;    
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+th:first-child {
+    border-top-left-radius: 8px;   
+}
+
+th:last-child {
+    border-top-right-radius: 8px;
 }
 #brasil p:after {
     content: url('Resources/Brazil_resized.jpg');    
@@ -77,4 +105,34 @@ tr:nth-child(even) td {
 #portugal p:before {
     
     content: url('Resources/Portugal_resized.jpg');
+}
+.red-button button {    
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-repeat:no-repeat;
+    background-image: url('Resources/RedButton.png');
+}
+
+.green-button button {    
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-repeat:no-repeat; 
+    background-image: url('Resources/GreenButton.png');
+}
+
+select {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    color: green;
+}
+
+select[disabled] {
+    color: red;
+}
+
+button:focus {
+    outline: none;
 }
