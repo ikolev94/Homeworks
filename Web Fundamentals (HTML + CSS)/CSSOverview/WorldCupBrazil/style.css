@@ -1,0 +1,80 @@
+#wrapper{
+	border-radius: 10px;
+	position: absolute;
+	white-space: nowrap;
+	width: 1300px;
+    height: 550px;  
+    background: #00923E;
+    padding: 20px;
+}
+table{
+	width: 100%;
+	height: 100%;
+	border: 2px solid black;
+	border-spacing: 0;
+	/*border-collapse: separate;*/
+	border-radius: 10px;
+}
+td,th{
+	text-align: center;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	 padding: 10px 5px 10px 5px; 	
+}
+th{
+	background-color: #F8C711;
+}
+.host {
+    text-align: right;
+}
+
+.guest {
+    text-align: left;
+}
+tr:nth-child(odd) td {
+    background: white;
+}
+
+tr:nth-child(even) td {
+    background: #C8C8C8;
+}
+#brasil p:after {
+    content: url('Resources/Brazil_resized.jpg');    
+}
+
+#mexico p:before {
+    content: url('Resources/Mexico_resized.jpg');
+}
+
+#spain p:after {
+    content: url('Resources/Spain_resized.jpg');
+}
+
+#netherlands p:before {
+    content: url('Resources/Netherlands_resized.jpg');
+}
+
+#italy p:after {
+    content: url('Resources/Italy_resized.jpg');   
+}
+
+#england p:before {
+    content: url('Resources/England_resized.jpg');
+}
+
+#argentina p:after {
+    content: url('Resources/Argentina_resized.jpg');   
+}
+
+#bosnia-and-herz p:before {
+    content: url('Resources/Bosnia_resized.jpg');
+}
+
+#germany p:after {
+    content: url('Resources/Germany_resized.jpg');
+}
+
+#portugal p:before {
+    
+    content: url('Resources/Portugal_resized.jpg');
+}
