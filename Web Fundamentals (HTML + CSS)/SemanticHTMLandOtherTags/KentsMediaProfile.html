@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Kent's Media Profile</title>
+</head>
+<body>
+    <style type="text/css">
+    section#main {
+        background-color: #ffc0cb;
+        border-radius: 5px;
+        width: 75%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+    h1{
+        text-align: center;
+    }
+    section > section {
+        display: inline-block;  
+        vertical-align: top; 
+        margin: 10px; 
+    }
+    meter{
+        width: 80%;
+        height: 25px;
+    }      
+    figcaption{
+        font-size: 1.3em;
+    }
+    audio{
+        display: block;
+        margin: 2px 0;
+    }
+    </style>
+    <section id="main">
+    	<h1>PROFILE</h1>
+    	<section id="general-ingo">
+            <figure>
+    		    <h3>User Kent</h3>
+        		<img src="Resources/profile.jpg"alt="Profile picture" width="286" height="230"/>
+        		<figcaption>Profile completed 60%</figcaption>                
+                <meter value="0.6"></meter>	
+            </figure>
+    	</section>
+        <section id="audio">
+            <h3>Uploaded Audio Files</h3>
+            <embed type="audio/ogg" src="http://www.w3schools.com/tags/horse.ogg" />
+            <audio controls>
+                <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio controls>
+                <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio controls>
+                <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <section id="video">
+            <h3>Uploaded Video Files</h3>
+            <video width="320" height="240" controls>
+                <source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
+                <source src="http://www.w3schools.com/tags/movie.ogg" type="video/ogg" />
+                <!--Fake subtitles-->
+                <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </section>
+</body>
+</html>
