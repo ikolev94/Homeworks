@@ -1,3 +1,72 @@
 body{
-	/*background-image: url("Resources/colorful_dots_on_black.jpg");*/
+	background-image: url("Resources/colorful_dots_on_black.jpg");
+	font-family: "Tahoma";
+}
+article{
+	border-radius: 20px;
+	background-color: rgba(230,230,230, 0.9); 
+	margin: 10px 5px;
+	padding: 15px;
+	margin: 5px 25px 5px 25px;
+}
+body > header{
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	height: 100px;
+	margin: -10px -10px 50px -10px;
+	background: linear-gradient(to left,  #0000FF 0%,#0000FF 33%,#008000 33%,#008000 66%, #FF0000 66%,#FF0000 100%);
+	background-color: #008000;
+	color: #B1D800;
+}
+section{
+	float: right;
+	width: 75%;
+}
+div:first-letter{
+	font-size: 3em;
+	font-style: italic;
+}
+article header {
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+aside{
+	 float: left;
+	background-color: rgba(230,230,230, 0.9); 
+	display: inline-block;
+	width: 20%;
+    border-radius: 20px;
+    padding: 15px;
+}
+nav>header{
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+#webColors{
+	background-color: red;
+	color: white;
+}
+#webSafeColors{
+	background-color: #FFA500;
+}
+#RGB{
+	background-color: #FFFF00;
+}	
+#RGBA{
+	background-color: #008000;
+	color: white;
+}
+#HSLHSV{
+	background-color: #0000FF;
+	color: white;
+
+}
+#lorem{
+	background-color: #800080;
+	color: white;
+
 }
