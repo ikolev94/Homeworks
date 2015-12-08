@@ -27,13 +27,29 @@ div:first-letter{
 	font-size: 3em;
 	font-style: italic;
 }
-nav > ul{
-	list-style-image: url("Resources/CheckList.png");
+ul{
+	list-style: none;
+	padding-left: 10px;
 }
-li{
-	/*list-style-type: none;*/
-	 /*padding: 5px 20px 5px 0px;*/
-    /*margin: 2px;*/
+nav ul li{
+	padding: 5px 25px 5px 5px;
+}
+nav ul li a:before{
+	content: url("Resources/CheckList.png");
+}
+nav ul li a:visited {
+    color: grey;   
+}
+li > a{
+	text-decoration: none;
+	margin-left: 30px;
+	color: black;
+	font-size: 1.2em;
+	margin: 0px 5px;
+}
+li:hover{
+	background-color: red;
+	border-radius: 10px;
 }
 article header {
     padding: 10px;
@@ -47,12 +63,38 @@ aside{
 	display: inline-block;
 	width: 20%;
     border-radius: 20px;
-    padding: 15px;
+    padding: 10px;
+    margin-right: 0;
+      margin-left: 5px;
 }
 nav>header{
 	text-decoration: underline;
 	font-weight: bold;
 	font-size: 1.3em;
+	text-indent: 20px;
+}
+li:first-child:hover {
+    background: #FF0000;    
+}
+
+li:nth-child(2):hover {
+    background: #FFA500;   
+}
+
+li:nth-child(3):hover {
+    background: #FFFF00;   
+}
+
+li:nth-child(4):hover {
+    background: #008000;   
+}
+
+li:nth-child(5):hover {
+    background: #0000FF;   
+}
+
+li:nth-child(6):hover {
+    background: #800080;   
 }
 #webColors{
 	background-color: red;
@@ -76,5 +118,23 @@ nav>header{
 #lorem{
 	background-color: #800080;
 	color: white;
+}
+article a {
+    font-style:italic;
+    color: #808080;
+}
 
+div:first-line {
+    font-style: italic;
+}
+span[lang='la'] {
+    color: #0000FF;
+    font-style: italic;
+}
+span[lang='la']:before {
+    content: "\" ";
+}
+
+span[lang='la']:after {
+    content: "\" ";
 }
