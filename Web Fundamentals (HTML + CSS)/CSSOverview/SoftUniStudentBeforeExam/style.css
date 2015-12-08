@@ -1,0 +1,87 @@
+#head{
+	border-radius: 50%;
+	background-color: yellow;
+	width: 370px;
+	height: 370px;
+	border: 2px solid black; 
+	position: relative;
+}
+#left-eye{
+	border-radius: 50%;
+	background-color: white;
+	width: 70px;
+	height: 70px;
+	border: 2px solid black;
+	position: absolute;
+	top: 18%;
+	left: 20%;
+}
+#right-eye{
+	border-radius: 50%;
+	background-color: white;
+	width: 70px;
+	height: 70px;
+	border: 2px solid black;
+	position: absolute;
+	top: 18%;
+	left: 60%
+}
+#nose{
+	border-radius: 50%;
+	background-color: red;
+	width: 60px;
+	height: 60px;
+	border: 2px solid black;
+	position: absolute;
+	top: 38%;
+	left: 42%;
+}
+#mouth{
+	position: absolute;
+	background-color: white;
+	border-radius: 100px;
+	width: 190px;
+	height: 70px;
+	top: 60%;
+	left: 24%;
+	border: 2px solid black;
+}
+#left-tooth{
+	left: 28%;
+	top: -2%;
+	position: absolute;
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	background-color: white;
+	border: 2px solid black;
+	width: 40px;
+	height: 35px;
+}
+#right-tooth{
+	left: 50%;
+	top: -2%;
+	position: absolute;
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	background-color: white;
+	border: 2px solid black;
+	width: 40px;
+	height: 35px;
+}
+#left-eyeball{
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	width: 30%;
+	height: 30%;
+	top: 50%;
+	left:55%;
+}
+#right-eyeball{
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	width: 30%;
+	height: 30%;
+	left: 8%
+}
