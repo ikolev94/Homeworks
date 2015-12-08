@@ -31,9 +31,6 @@ ul{
 	list-style: none;
 	padding-left: 10px;
 }
-nav ul li{
-	padding: 5px 25px 5px 5px;
-}
 nav ul li a:before{
 	content: url("Resources/CheckList.png");
 }
@@ -46,6 +43,7 @@ li > a{
 	color: black;
 	font-size: 1.2em;
 	margin: 0px 5px;
+	cursor: default;
 }
 li:hover{
 	background-color: red;
