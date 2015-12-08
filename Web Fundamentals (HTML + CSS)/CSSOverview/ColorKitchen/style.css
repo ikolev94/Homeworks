@@ -27,6 +27,14 @@ div:first-letter{
 	font-size: 3em;
 	font-style: italic;
 }
+nav > ul{
+	list-style-image: url("Resources/CheckList.png");
+}
+li{
+	/*list-style-type: none;*/
+	 /*padding: 5px 20px 5px 0px;*/
+    /*margin: 2px;*/
+}
 article header {
     padding: 10px;
     margin: 0;
