@@ -1,5 +1,23 @@
 #wrapper{
-    border-top: dotted yellow;
-    border-right: dashed red;
-    border-left: solid green;
+    font-family: sans-serif;
+    width: 500px;
+    height:200px;
+    border-top: 5px dotted yellow;
+    border-right: 10px solid green;
+    border-left: 6px dashed red;
+    border-bottom: double 6px #0202F7;
+}
+#small{
+    margin: auto ;
+    border-radius: 50px;
+    border: 2px solid red;
+    box-shadow: 0 0 0 2px yellow, 0 0 0 4px green,0 0 0 6px blue;
+    width: 450px;
+    height: 100px;
+}
+h1{
+    text-align: center;
+}
+h4{
+    text-align: center;
 }
