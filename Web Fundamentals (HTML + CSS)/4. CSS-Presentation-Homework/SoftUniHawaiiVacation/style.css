@@ -1,0 +1,7 @@
+body{
+    background-image: url("resources/HawaiiBackground.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background: radial-gradient(circle at 162px 130px, white 4.5%, #e9e69b 5%, white 10%, #0068DB 100%);
+
+}
