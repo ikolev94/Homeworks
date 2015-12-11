@@ -1,39 +1,59 @@
 form{
     font-family: Tahoma, sans-serif;
-    width: 425px;
+    width: 440px;
     background-image: url('resources/formBackground.jpg');
+    border-radius: 5px;
+    padding-top: 20px;
+    margin: auto;
 }
 legend{
- color: white;
+    color: white;
+    font-weight: bold;
 }
 fieldset{
     border: none;
 }
+label{
+    display: inline-block;
+    width: 100px;
+}
 div{
     background-color: rgba(240,240,240,0.5);
-    margin: 4px 0;
+    margin: 4px 10px;
     padding: 0px 10px;
+    /*border: 1px solid #dcdcdc;*/
 }
 div,textarea,input{
-    border-radius: 5px;
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
+}
+input{
+    left: 30px;
 }
 textarea,input{
-    width: 250px;
-    /*margin: 0 20px;*/
+    width: 205px;
+    height: 15px;
+    padding: 3px 0;
+    margin: 7px 0;
+    /*display: inline-block;*/
+}
+input:focus,textarea:focus{
+    border: 1px solid red;
+    outline: none;
 }
 textarea{
-    /*width: 250px;*/
+   resize: vertical;
     height: 120px;
 
     /*overflow: hidden;*/
 }
 #addres-label{
+    padding-top: 10px;
     vertical-align: top;
 }
 .button {
-    margin-left: 150px;
-    margin-top:20px;
-    margin-bottom: 20px;
+    margin-left: 160px;
+    margin-bottom: 25px;
     background-color:black;
     border: none;
     border-radius:28px;
@@ -44,10 +64,30 @@ textarea{
 }
 .button:hover {
     background-color:#5cbf2a;
+    box-shadow: 0 0 10px yellow;
 }
 .button:focus{
     outline: none;
 }
-span:before{
+#visa-text{
+    padding-right: 15px;
+}
+#amex-text{
+    padding-right: 15px;
+}
+#visa-text:before{
     content: url('resources/visa.jpg');
+}
+#amex-text:before{
+    content: url("resources/amex.jpg");
+}
+#mastercard-text:before{
+    content: url("resources/master.jpg");
+}
+#cards{
+    padding: 10px;
+}
+#visa,#mastercard,#amex{
+    width: 10px;
+
 }

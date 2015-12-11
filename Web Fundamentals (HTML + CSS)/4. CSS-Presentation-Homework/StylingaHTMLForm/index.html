@@ -19,7 +19,7 @@
                 </div>
             <div>
                 <label for="phone">Phone</label>
-                <input id="phone"  type="number" placeholder="e.g. +4475000000000" />
+                <input id="phone"  type="text" placeholder="e.g. +4475000000000" />
             </div>
        </fieldset>
        <fieldset>
@@ -42,19 +42,19 @@
         </fieldset>
         <fieldset>
             <legend>Step 1: Card details</legend>
-            <div>
+            <div id="cards">
                 <p>Card type</p>
-                <input type="radio" name="bank" value="visa" id="vise"><span>visa</span>    
-                <input type="radio" name="bank" value="AmEx"id="amex"><span>AmEx</span>
-                <input type="radio" name="bank" value="mastercard"id="mastercard"><span>mastercard</span>
+                <input type="radio" name="bank" value="visa" id="visa"><span id="visa-text">VISA</span>
+                <input type="radio" name="bank" value="AmEx" id="amex" title="amex"><span id="amex-text">AmEx</span>
+                <input type="radio" name="bank" value="mastercard" id="mastercard"><span id="mastercard-text">Mastercard</span>
             </div>
             <div>
                 <label for="country">Card number</label>
-                <input type="number" name="card-number" />
+                <input type="text" name="card-number" />
             </div>
             <div>
                 <label for="country">Security code</label>
-                <input type="number"/>
+                <input type="text"/>
             </div>
             <div>
                 <label for="country">Name on card</label>
