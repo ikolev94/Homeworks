@@ -41,6 +41,26 @@
             <input type="text" name="country" id="country" title="Latin letters, hyphens and spaces only" pattern="[a-zA-Z\- ]+" maxlength="40" />
         </div>
     </fieldset>
+    <fieldset>
+        <div>
+            <input type="radio" name="bank" value="visa" id="vise">visa
+            <input type="radio" name="bank" value="AmEx"id="amex">AmEx
+            <input type="radio" name="bank" value="mastercard"id="mastercard">mastercard
+        </div>
+        <div>
+            <label for="country">Card number</label>
+            <input type="number" name="card-number" />
+        </div>
+        <div>
+            <label for="country">Security code</label>
+            <input type="number"/>
+        </div>
+        <div>
+            <label for="country">Name on card</label>
+            <input type="text" placeholder="exact name as on the card" />
+        </div>
+    </fieldset>
+    <button></button>
 </form>
 </body>
 </html>
