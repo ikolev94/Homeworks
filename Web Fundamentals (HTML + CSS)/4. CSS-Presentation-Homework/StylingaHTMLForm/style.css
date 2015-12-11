@@ -1,7 +1,42 @@
 form{
-    width: 960px;
+    font-family: Tahoma, sans-serif;
+    width: 425px;
     background-image: url('resources/formBackground.jpg');
 }
-input{
-
+legend{
+ color: white;
+}
+fieldset{
+    border: none;
+}
+div{
+    background-color: rgba(240,240,240,0.5);
+    margin: 4px 0;
+    padding: 0px 10px;
+}
+div,textarea,input{
+    border-radius: 5px;
+}
+input,textarea{
+    /*width: 250px;*/
+    /*height: 20px;*/
+    /*overflow: hidden;*/
+}
+.button {
+    margin-left: 150px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    background-color:black;
+    border: none;
+    border-radius:28px;
+    cursor:pointer;
+    color:#ffffff;
+    text-transform: uppercase;
+    padding:10px 31px;
+}
+.button:hover {
+    background-color:#5cbf2a;
+}
+.button:focus{
+    outline: none;
 }

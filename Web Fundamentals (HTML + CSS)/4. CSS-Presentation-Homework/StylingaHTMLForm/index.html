@@ -6,61 +6,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="post">
-   <fieldset>
-       <p>Step 1: Your details</p>
+    <form action="post">
+       <fieldset>
+           <legend>Step 1: Your details</legend>
+           <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="First and last name">
+           </div>
+            <div>
+               <label for="email">Email</label>
+               <input id="email" type="email" placeholder="example@domain.com">
+                </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input id="phone"  type="number" placeholder="e.g. +4475000000000" />
+            </div>
+       </fieldset>
+       <fieldset>
+            <legend>Step 1: Delivery address</legend>
 
-    <div>
-       <label for="name">Name</label>
-       <input type="text" id="name" placeholder="First and last name">
-    </div>
-    <div>
-       <label for="email">Email</label>
-       <input id="email" type="email" placeholder="example@domain.com">
-        </div>
-    <div>
-        <label for="phone">Phone</label>
-        <input id="phone"  type="number" placeholder="e.g. +4475000000000" />
-    </div>
-   </fieldset>
-    <fieldset>
-        <legend>Step 1: Delivery address</legend>
+            <div id="text-area">
+                <label for="address">Address</label>
+                <textarea name="address" id="address"></textarea>
+            </div>
 
-        <div id="text-area">
-            <label for="address">Address</label>
-            <textarea name="address" id="address"></textarea>
-        </div>
+            <div>
+                <label for="post">Post code</label>
+                <input type="text" name="post" id="post" title="Digits only" pattern="[0-9]+" />
+            </div>
 
-        <div>
-            <label for="post">Post code</label>
-            <input type="text" name="post" id="post" title="Digits only" pattern="[0-9]+" />
-        </div>
+            <div>
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country" title="Latin letters, hyphens and spaces only" pattern="[a-zA-Z\- ]+" maxlength="40" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Step 1: Card details</legend>
+            <div>
+                <p>Card type</p>
+                <input type="radio" name="bank" value="visa" id="vise">visa
+                <input type="radio" name="bank" value="AmEx"id="amex">AmEx
+                <input type="radio" name="bank" value="mastercard"id="mastercard">mastercard
+            </div>
+            <div>
+                <label for="country">Card number</label>
+                <input type="number" name="card-number" />
+            </div>
+            <div>
+                <label for="country">Security code</label>
+                <input type="number"/>
+            </div>
+            <div>
+                <label for="country">Name on card</label>
+                <input type="text" placeholder="exact name as on the card" />
+            </div>
+        </fieldset>
+        <button type="submit" class="button" onclick="confirm('You buy it')">buy it!</button>
 
-        <div>
-            <label for="country">Country</label>
-            <input type="text" name="country" id="country" title="Latin letters, hyphens and spaces only" pattern="[a-zA-Z\- ]+" maxlength="40" />
-        </div>
-    </fieldset>
-    <fieldset>
-        <div>
-            <input type="radio" name="bank" value="visa" id="vise">visa
-            <input type="radio" name="bank" value="AmEx"id="amex">AmEx
-            <input type="radio" name="bank" value="mastercard"id="mastercard">mastercard
-        </div>
-        <div>
-            <label for="country">Card number</label>
-            <input type="number" name="card-number" />
-        </div>
-        <div>
-            <label for="country">Security code</label>
-            <input type="number"/>
-        </div>
-        <div>
-            <label for="country">Name on card</label>
-            <input type="text" placeholder="exact name as on the card" />
-        </div>
-    </fieldset>
-    <button></button>
-</form>
+    </form>
 </body>
 </html>
