@@ -26,7 +26,7 @@
             <legend>Step 1: Delivery address</legend>
 
             <div id="text-area">
-                <label for="address">Address</label>
+                <label id="addres-label" for="address">Address</label>
                 <textarea name="address" id="address"></textarea>
             </div>
 
@@ -44,9 +44,9 @@
             <legend>Step 1: Card details</legend>
             <div>
                 <p>Card type</p>
-                <input type="radio" name="bank" value="visa" id="vise">visa
-                <input type="radio" name="bank" value="AmEx"id="amex">AmEx
-                <input type="radio" name="bank" value="mastercard"id="mastercard">mastercard
+                <input type="radio" name="bank" value="visa" id="vise"><span>visa</span>    
+                <input type="radio" name="bank" value="AmEx"id="amex"><span>AmEx</span>
+                <input type="radio" name="bank" value="mastercard"id="mastercard"><span>mastercard</span>
             </div>
             <div>
                 <label for="country">Card number</label>
@@ -61,7 +61,7 @@
                 <input type="text" placeholder="exact name as on the card" />
             </div>
         </fieldset>
-        <button type="button" class="button" onclick="confirm('You buy it')">buy it!</button>
+        <button type="button" class="button">buy it!</button>
 
     </form>
 </body>

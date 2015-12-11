@@ -17,10 +17,18 @@ div{
 div,textarea,input{
     border-radius: 5px;
 }
-input,textarea{
+textarea,input{
+    width: 250px;
+    /*margin: 0 20px;*/
+}
+textarea{
     /*width: 250px;*/
-    /*height: 20px;*/
+    height: 120px;
+
     /*overflow: hidden;*/
+}
+#addres-label{
+    vertical-align: top;
 }
 .button {
     margin-left: 150px;
@@ -39,4 +47,7 @@ input,textarea{
 }
 .button:focus{
     outline: none;
+}
+span:before{
+    content: url('resources/visa.jpg');
 }
