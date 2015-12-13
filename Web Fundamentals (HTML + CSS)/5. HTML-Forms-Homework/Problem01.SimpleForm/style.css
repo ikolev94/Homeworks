@@ -1,0 +1,15 @@
+#wrapper{
+    font-family: Tahoma sans-serif;
+    background-color: #f4f4ee;
+    width: 960px;
+}
+h1{
+    color: #003268;
+}
+p{
+    opacity: 0.5;
+}
+input{
+    display: block;
+    margin: 7px 0;
+}
