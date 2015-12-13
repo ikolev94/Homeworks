@@ -1,15 +1,80 @@
 #wrapper{
-    font-family: Tahoma sans-serif;
+    font-family: Tahoma, serif;
     background-color: #f4f4ee;
     width: 960px;
 }
 h1{
-    color: #003268;
+    color: #234465;
 }
 p{
     opacity: 0.5;
 }
+legend{
+    padding-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+span{
+    color: #234465;
+}
+fieldset{
+    width: 280px;
+    border: none;
+}
+#register-button{
+    float: right;
+    color: #234465;
+    margin-right: 6px;
+    background-color: #f4f4ee;
+    border: 2px solid #234465;
+    height: 30px;
+    width: 140px;
+    cursor: pointer;
+}
 input{
     display: block;
     margin: 7px 0;
+    width: 270px;
+    height: 25px;
+}
+form{
+    display: inline-flex;
+}
+#checkbox{
+    margin: 0;
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+#checkbox-button{
+    display: inline-flex;
+}
+#remember{
+    font-size: 0.7em;
+    color: white;
+}
+#log-button{
+    margin-left: 43px;
+    height: 30px;
+    width: 140px;
+    border: 2px solid #ac8f00;
+    background-color: #234465;
+    color: white;
+    cursor: pointer;
+
+}
+a{
+    display: block;
+    color: white;
+    font-size: 0.7em;
+    float: right;
+    padding-top: 7px;
+    margin-right: 33px;
+}
+.log{
+    background-color: #234465;
+    height: 225px;
+}
+.log>fieldset>legend{
+    color: white;
 }

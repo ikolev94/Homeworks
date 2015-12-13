@@ -9,14 +9,31 @@
     <div id="wrapper">
         <h1>Enter the system</h1>
         <p>It is necessary to login in Your account in order to sign in for a course.</p>
-        <form action="register">
-            <legend>are you new? <span>register</span></legend>
-            <input type="text" placeholder="User name">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <input type="password" placeholder="Password">
-            <button type="reset">Register</button>
+        <div>
+        <form class="register">
+            <fieldset>
+                <legend>are you new? <span>register</span></legend>
+                <input type="text" name="name" placeholder="User name" required>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password" pattern=".{6,}">
+                <input type="password" name="confirm-password" placeholder="Confirm Password" pattern=".{6,}">
+                <button id="register-button" type="button">Register</button>
+            </fieldset>
         </form>
+        <form class="log">
+            <fieldset>
+                <legend>already a student? login</legend>
+                <input type="text" name="name" placeholder="User name">
+                <input type="password" name="password" placeholder="Password">
+                <div id="checkbox-button">
+                    <input id="checkbox" type="checkbox" name="remember-me">
+                    <label for="checkbox" id="remember">Remember me?</label>
+                    <button id="log-button" type="button">Login</button>
+                </div>
+                <a href="#">Forgot Password</a>
+            </fieldset>
+        </form>
+        </div>
     </div>
 </body>
 </html>
