@@ -1,0 +1,80 @@
+#wrapper{
+    width: 800px;
+    height:500px;
+    background-color: #3a5795;
+    color: white;
+    font-family: Tahoma, sans-serif;
+}
+form{
+    margin-right: 15px;
+    display: inline-flex;
+}
+fieldset{
+    width: 273px;
+    height: 215px;
+    border-radius: 7px;
+}
+legend{
+    text-align: center;
+}
+h1{
+    font-size: 4em;
+    text-align: center;
+}
+h1>span{
+    font-size: 0.2em;
+}
+h2 ,h5{
+    text-align: center;
+}
+#birthday{
+    width: 210px;
+    margin-top: 5px;
+    display: block;
+}
+.birthday > label{
+    margin-bottom: 5px;
+}
+input{
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 130px;
+}
+#male,#female,#other{
+    width: 12px;
+}
+.important{
+    width: 413px;
+}
+.small{
+    width: 70px;
+}
+#color-picker{
+    display: block;
+}
+#color{
+    display: inline-block;
+}
+textarea{
+    width: 405px;
+    height: 45px;
+    border-radius: 5px;
+    resize: vertical;
+    max-height: 90px;
+}
+#info{
+    padding-left: 10px;
+}
+.button{
+    margin-top: 13px;
+    margin-right: 20px;
+    border-radius: 5px;
+    height: 35px;
+}
+#clear{
+    margin-left: 3px;
+    width: 300px;
+}
+#register{
+    width: 440px;
+}
