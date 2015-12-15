@@ -9,8 +9,71 @@
     <div id="wrapper">
         <form action="">
             <fieldset>
-                <legen>flight order</legen>
-                <input type="text">
+                <legend>flight order</legend>
+                <span id="from">
+                    <label for="from-city">From</label>
+                    <input list="cities" name="from" id="from-city" placeholder="enter a city">
+                    <datalist id="cities">
+                        <option value="Plovdiv">
+                        <option value="Varna">
+                        <option value="Sofia">
+                    </datalist>
+                </span>
+                <span id="to">
+                    <label for="from-city">To</label>
+                    <input list="cities" name="from" id="to-city" placeholder="enter a city">
+                </span>
+                <span id="check">
+                    <input type="checkbox" id="direct" />
+                    <label for="direct">Prefer directs</label>
+                </span>
+                <span id="departure-date">
+                    <label for="d-date">Departure Date</label>
+                    <input type="date" value="2014-06-09" id="d-date">
+                </span>
+                <span id="time-interval">
+                    <label>Time Interval</label>
+                    <input type="time" value="00:20" id="t-interval-max">
+                    <input type="time" value="05:00" id="time-interval-min">
+                </span>
+                <span id="return-date">
+                    <label for="r-date">Return Date</label>
+                    <input type="date" value="2014-06-13" id="r-date">
+                </span>
+                <span id="time-interval2">
+                    <label>Time Interval</label>
+                    <input type="time" value="16:00" id="t-interval-max2">
+                    <input type="time" value="22:00" id="time-interval-min2">
+                </span>
+                <div class="children">
+                    <span>
+                        <label>12+</label>
+                        <input id="big" name="children-12-plus" type="number" min="0" max="5" value="0" />
+                    </span>
+
+                    <span>
+                        <label>2-12</label>
+                        <input id="mid" name="children-2-12" type="number" min="0" max="5" value="0" />
+                    </span>
+
+                    <span>
+                        <label>0-2</label>
+                        <input id="small" name="children-0-2" type="number" min="0" max="5" value="0"/>
+                    </span>
+
+                    <span id="class">
+                        <label for="flight-class">Choose class</label>
+                        <select name="class" id="flight-class">
+                            <option value="econ" selected="selected">Economy</option>
+                            <option value="premium">Premium Economy</option>
+                            <option value="business">Business</option>
+                            <option value="first-class">First class</option>
+                        </select>
+                    </span>
+                </div>
+                <div id="button">
+                <button type="button">Search</button>
+                    </div>
             </fieldset>
         </form>
     </div>

@@ -1,0 +1,77 @@
+body{
+    font-family: Tahoma, sans-serif;
+    font-size: 10px;
+}
+#wrapper{
+    background-color: #ffc6c3;
+    width: 431px;
+}
+fieldset{
+    border: none;
+}
+legend{
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+label{
+    margin-top: 5px;
+    font-style: italic;
+    display: block;
+}
+#from,#to,#departure-date,#time-interval,#return-date,#time-interval2{
+    display: inline-block;
+}
+.children{
+    display: inline-flex;
+    width: 420px;
+}
+#check{
+    display: flex;
+    margin-left: 205px;
+}
+#from-city, #to-city, #d-date, #r-date,#flight-class{
+    width: 200px;
+    height: 20px;
+}
+#big,#mid,#small{
+    width: 62px;
+    margin-right: 3px;
+}
+button{
+    width: 200px;
+    height: 27px;
+    margin-top: 7px;
+    margin-left: 209px;
+    font-weight: bold;
+}
+input, select{
+    margin-top: 5px;
+}
+#time-interval-min,#time-interval-min2,#t-interval-max, #t-interval-max2{
+    height: 20px;
+    width: 95px;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: black;
+    font-family: sans-serif;
+    text-indent: 2px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: black;
+    font-family: sans-serif;
+    text-indent: 2px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: black;
+    font-family: sans-serif;
+    text-indent: 2px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: black;
+    font-family: sans-serif;
+    text-indent: 2px;
+}
