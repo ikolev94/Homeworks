@@ -1,0 +1,26 @@
+footer{
+    width: 960px;
+    background-color: #234465;
+    font-family: Tahoma, sans-serif;
+}
+section{
+    display: inline-block;
+}
+#apply-button,#fast-button{
+    display: block;
+    background-color: #234465;
+    border:2px solid #FFA000 ;
+    width: 100px;
+    height: 50px;
+    color: white;
+}
+h3{
+    color: #FFA000;
+    text-transform: uppercase;
+}
+a ,p{
+    color: white;
+}
+ul{
+    list-style-type: none;
+}
