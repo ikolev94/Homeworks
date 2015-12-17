@@ -1,26 +1,69 @@
 footer{
     width: 960px;
+    font-size :11px;
     background-color: #234465;
+    display: block;
     font-family: Tahoma, sans-serif;
 }
 section{
+    margin: 10px;
     display: inline-block;
+    vertical-align: top;
 }
 #apply-button,#fast-button{
     display: block;
     background-color: #234465;
     border:2px solid #FFA000 ;
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     color: white;
+    margin-left:40px;
+}
+#apply-button:hover , #fast-button:hover {
+    cursor: pointer;
+    background-color: #FFA000;
+}
+#apply-button{
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 h3{
+    font-size: 1em;
     color: #FFA000;
     text-transform: uppercase;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+li{
+    margin: 3px 0;
+}
 a ,p{
+    font-size: 0.7em;
     color: white;
 }
 ul{
+    padding-left: 0;
     list-style-type: none;
+}
+.fb-like-box{
+    width: 45px;
+    height: 40px;
+}
+button.social-button {
+        width: 32px;
+        height: 32px;
+        float: left;
+        padding: 0;
+        border: none;
+        background-color: #234465;
+ }
+#twitter{
+    padding-top: 3px;
+}
+button.social-button:hover {
+    cursor:pointer;
 }
