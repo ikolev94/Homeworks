@@ -1,0 +1,127 @@
+body {
+    background-color: #55a9ff;
+}
+
+#wrapper {
+    font-family: Arial, sans-serif;
+    width: 55%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color :black;
+}
+#wrapper > header > h1 {
+    border-bottom: 1px solid black;
+    margin-bottom: -32px;
+    padding-bottom: 25px;
+}
+
+header > h1 > a {
+    color: white;
+}
+nav > ul {
+    list-style: none;
+    float: right;
+    display: block;
+}
+nav {
+    margin-bottom: 60px;
+}
+nav > ul:after {
+    clear: both;
+}
+nav > ul > li {
+    display: inline-block;
+    background-color: white;
+    padding: 5px 10px;
+    color: black;
+    margin-right: 10px;
+    border: 2px solid black;
+}
+aside {
+    float: right;
+    width: 28%;
+    background-color: white;
+    border: 2px solid black;
+}
+p {
+    margin: 5px 10px;
+    text-indent: 30px;
+}
+#wrapper > aside > div > ul {
+    list-style-type: none;
+    margin: 5px 10px;
+    padding: 5px 10px;
+}
+article {
+    border: 2px solid black;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+section {
+    width: 70%;
+    float: left;
+}
+
+footer{
+    float: left;
+    background-color: white;
+    margin-top: 10px;
+    width: 100%;
+    border: 2px solid black;
+}
+#wrapper > footer > h2 {
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+h1 {
+    padding: 0 10px;
+}
+#wrapper > aside > div > ul > li {
+    margin-bottom: 10px;
+}
+
+@media (max-width:960px ) and (min-width:780px) {
+    #wrapper {
+        width: 100%;
+    }
+}
+@media (max-width:780px ) and (min-width:640px) {
+    #wrapper ,aside,section {
+        width: 100%;
+    }
+    .block{
+        display: inline-block;
+        width: 24%;
+        text-align: center;
+    }
+    aside > div > ul > li > a {
+        display: block;
+    }
+}
+@media (max-width: 640px) {
+    #wrapper ,aside,section {
+        width: 100%;
+    }
+    nav > ul > li {
+        display: block;
+    }
+    nav > ul {
+        float: none;
+    }
+    #wrapper > header > h1 {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        margin: 0;
+    }
+}
