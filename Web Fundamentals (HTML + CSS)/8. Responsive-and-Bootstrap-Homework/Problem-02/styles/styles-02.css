@@ -1,0 +1,72 @@
+body {
+    background-image: url(../images/background-flowers.jpg);
+    font-family: Arial, sans-serif;
+}
+#wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+#wrapper > header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 5px 1px 5px;
+    border: 2px solid black;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+#wrapper > aside.left > ul,aside.right > ul {
+    padding: 0;
+}
+#wrapper > header > h1 > a {
+    text-decoration: none;
+    color: black;
+}
+nav > ul > li {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+nav > ul {
+    text-align: right;
+    margin: 0 5px 15px 0;
+}
+li > a {
+    color: white;
+}
+.left{
+    float: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 20%;
+    border: 2px solid black;
+}
+.right{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 20%;
+    float: right;
+    border: 2px solid black;
+}
+.left ul > li > a > span {
+    color: black;
+}
+section {
+    width: 54%;
+    float: left;
+    margin: 15px 17px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+}
+#wrapper > section > article > div > img {
+    width: 23% ;
+}
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+}
