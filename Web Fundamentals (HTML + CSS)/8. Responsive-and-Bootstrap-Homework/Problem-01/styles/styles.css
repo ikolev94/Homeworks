@@ -30,7 +30,11 @@ nav {
     margin-bottom: 60px;
 }
 nav > ul:after {
+    content: "";
+    display: block;
     clear: both;
+    zoom: 1;
+    height: 0;
 }
 nav > ul > li {
     display: inline-block;
