@@ -1,12 +1,12 @@
 function replaceATag(str) {
-    var regex = /<a href=(.+?)>([^<]+)<\/a>/g;
+    var regex = /<a href=(.+?)>([^<]+)<\/a>/gi;
     var result = [];
     var match;
     while (match = regex.exec(str)) {
-        result.push(match[1]);
+        console.log('[URL href=' + match[1] + ']' + match[2] + '[/URL]');
     }
-    return result.join('');
+    //return result.join('');
 }
 
-var checkValue = '<p>Hello</p><a href=\'http://w3c.org\'>W3C</a>';
-console.log(replaceATag(checkValue));
+var checkValue = '<ul> <li> <a href=http://softuni.bg>SoftUni</a></li></ul>';
+replaceATag(checkValue);
