@@ -1,9 +1,9 @@
 function solve(input) {
     var courses = {};
     input.forEach(function (line) {
-        var lineArgs = line.trim().split(/\s?\|\s?/g);
-        var name = lineArgs[0].trim();
-        var course = lineArgs[1].trim();
+        var lineArgs = line.trim().split(/\s*\|\s*/g);
+        var name = lineArgs[0];
+        var course = lineArgs[1];
         var grade = Number(lineArgs[2]);
         var visits = Number(lineArgs[3]);
 
