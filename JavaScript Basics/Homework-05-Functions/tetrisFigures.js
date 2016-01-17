@@ -12,66 +12,88 @@ function solve(input) {
         }
     }
 
+    console.log(JSON.stringify(figures));
+
     function checkElem(elem, row, col) {
-        var symbol = 'o';
         switch (elem) {
             case 'I':
-                if (symbol == input[row + 1][col] &&
-                    symbol == input[row + 2][col] &&
-                    symbol == input[row + 3][col]) {
+                if (input[row + 3] == undefined) {
+                    return false;
+                }
+                if (input[row][col] == input[row + 1][col] &&
+                    input[row][col] == input[row + 2][col] &&
+                    input[row][col] == input[row + 3][col]) {
                     figures['I']++;
                 }
                 break;
             case 'L':
-                if (symbol == input[row + 1][col] &&
-                    symbol == input[row + 2][col] &&
-                    symbol == input[row + 2][col + 1]) {
+                if (input[row + 2] == undefined || input[row + 2][col + 1] == undefined) {
+                    return false;
+                }
+                if (input[row][col] == input[row + 1][col] &&
+                    input[row][col] == input[row + 2][col] &&
+                    input[row][col] == input[row + 2][col + 1]) {
                     figures['L']++;
                 }
                 break;
             case 'J':
-                if (symbol == input[row + 1][col] &&
-                    symbol == input[row + 2][col] &&
-                    symbol == input[row + 2][col - 1]) {
+                if (input[row + 2] == undefined || input[row + 2][col - 1] == undefined) {
+                    return false;
+                }
+                if (input[row][col] == input[row + 1][col] &&
+                    input[row][col] == input[row + 2][col] &&
+                    input[row][col] == input[row + 2][col - 1]) {
                     figures['J']++;
                 }
                 break;
             case 'O':
-                if (symbol == input[row + 1][col] &&
-                    symbol == input[row][col + 1] &&
-                    symbol == input[row + 1][col + 1]) {
+                if (input[row + 1] == undefined || input[row + 1][col + 1] == undefined) {
+                    return false;
+                }
+                if (input[row][col] == input[row + 1][col] &&
+                    input[row][col] == input[row][col + 1] &&
+                    input[row][col] == input[row + 1][col + 1]) {
                     figures['O']++;
                 }
                 break;
             case 'Z':
-                if (symbol == input[row][col + 1] &&
-                    symbol == input[row + 1][col + 1] &&
-                    symbol == input[row + 1][col + 2]) {
-                    figures['I']++;
+                if (input[row + 1] == undefined || input[row + 1][col + 2] == undefined) {
+                    return false;
+                }
+                if (input[row][col] == input[row][col + 1] &&
+                    input[row][col] == input[row + 1][col + 1] &&
+                    input[row][col] == input[row + 1][col + 2]) {
+                    figures['Z']++;
                 }
                 break;
             case 'S':
-                if (symbol == input[row][col - 1] &&
-                    symbol == input[row + 1][col - 1] &&
-                    symbol == input[row + 1][col - 2]) {
-                    figures['I']++;
+                if (input[row + 1] == undefined || input[row + 1][col - 2] == undefined) {
+                    return false;
+                }
+                if (input[row][col] == input[row][col - 1] &&
+                    input[row][col] == input[row + 1][col - 1] &&
+                    input[row][col] == input[row + 1][col - 2]) {
+                    figures['S']++;
                 }
                 break;
             case 'T':
-                if (symbol == input[row][col + 1] &&
-                    symbol == input[row + 1][col + 1] &&
-                    symbol == input[row][col + 2]) {
-                    figures['I']++;
+                if (input[row + 1] == undefined || input[row][col + 2] == undefined) {
+                    return false;
+                }
+                if (input[row][col] == input[row][col + 1] &&
+                    input[row][col] == input[row + 1][col + 1] &&
+                    input[row][col] == input[row][col + 2]) {
+                    figures['T']++;
                 }
                 break;
         }
     }
 }
 
-solve([
-    '--o--o-',
-    '--oo-oo',
-    'ooo-oo-',
-    '-ooooo-',
-    '---oo--'
-]);
+//solve([
+//    '--o--o-',
+//    '--oo-oo',
+//    'ooo-oo-',
+//    '-ooooo-',
+//    '---oo--'
+//]);
