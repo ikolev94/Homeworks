@@ -21,22 +21,24 @@ function solve(input) {
                 'matchesPlayedWith': []
             };
         }
-        var opponent = allTeams[team].matchesPlayedWith.filter(function (t) {
-            return t === opoTeam;
-        })[0];
 
-        if (!opponent) {
+        if (allTeams[team].matchesPlayedWith.indexOf(opoTeam) === -1) {
             allTeams[team].matchesPlayedWith.push(opoTeam);
         }
         allTeams[team].goalsScored += scoredGoals;
-        allTeams[team].goalsScored += concededGoals;
+        allTeams[team].goalsConceded += concededGoals;
     }
+    var sortTeams ={};
+    var keys = Object.keys(allTeams).sort();
+    for (var j = 0; j < keys.length; j++) {
+        var key = keys[j];
+        sortTeams[key]=allTeams[key];
+        sortTeams[key].matchesPlayedWith.sort();
+    }
+
+    console.log(JSON.stringify(sortTeams));
 }
 
-
-solve(['Germany / Argentina: 1-0',
-    'Brazil / Netherlands: 0-3']);
-//
 //solve([ 'Germany / Argentina: 1-0',
 //    'Brazil / Netherlands: 0-3',
 //    'Netherlands / Argentina: 0-0',
