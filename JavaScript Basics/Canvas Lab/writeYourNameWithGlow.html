@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <canvas id="canvas" width="1000" height="600"></canvas>
+        <script>
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+            ctx.lineWidth = '12';
+            ctx.strokeStyle = 'red';
+            ctx.font = "200px Verdana";
+            ctx.textAlign = "left";
+            ctx.fillText('SoftUni', 150, 300);
+            ctx.strokeText('SoftUni', 150, 300);
+        </script>
+    </body>
+</html>
