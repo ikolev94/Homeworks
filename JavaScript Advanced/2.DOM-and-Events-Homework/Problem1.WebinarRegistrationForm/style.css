@@ -1,0 +1,24 @@
+form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #dfda92;
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+div {
+    visibility: hidden;
+    margin-bottom: 15px;
+}
+
+#invoice {
+    width: 30px;
+    height: 30px;
+}
+
+.red {
+    color: red;
+}
