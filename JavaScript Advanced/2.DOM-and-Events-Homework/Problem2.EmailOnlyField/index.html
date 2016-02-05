@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Email only field</title>
+    <style>
+        #wrapper {
+            width: 100px;
+            margin: 10px auto;
+        }
+
+        #output {
+            color: white;
+            width: 175px;
+            height: 25px;
+            text-align: center;
+        }
+
+        input {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<form action="">
-    <input type="text" id="input">
-    <div style="width: 173px; height: 26px" id="output"></div>
+<div id="wrapper">
+    <input type="text" id="input" title="in">
+    <div id="output"></div>
     <button id="validate-button">Validate</button>
-</form>
+</div>
 <script src="emailOnlyField.js"></script>
 </body>
 </html>
