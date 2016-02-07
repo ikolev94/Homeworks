@@ -1,0 +1,30 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+section {
+    display: flex;
+}
+
+form, canvas {
+    border: 2px solid gray;
+    width: 50%;
+}
+
+input {
+    margin: 10px 15px 10px 0;
+}
+
+.circle, .rectangle, .triangle, .line, .segment {
+    display: none;
+}
+
+#clear {
+    width: 20%;
+}

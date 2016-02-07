@@ -15,10 +15,6 @@ Object.prototype.extends = function (parent) {
     this.prototype.constructor = this;
 };
 
-function isNumeric(n) {
-    return !isNaN(parseFloat(n)) && isFinite(n);
-}
-
 var shapeModule = (function () {
 
     var Shape = (function () {
@@ -163,7 +159,7 @@ var shapeModule = (function () {
             ctx.lineTo(this._bX, this._bY);
             ctx.lineTo(this._cX, this._cY);
             ctx.fill();
-        }
+        };
 
         Triangle.prototype.toString = function () {
             return Shape.prototype.toString.call(this)
@@ -212,7 +208,7 @@ var shapeModule = (function () {
 
         Segment.prototype.draw = function (ctx) {
             var distance = this.getDistanceBetweenPoints(this._aX, this._aY, this._bX, this._bY);
-            console.log(distance);
+            console.log('distance = ' + distance);
             var rad = distance > 100 ? 10 : distance > 10 ? 5 : 0;
             ctx.strokeStyle = this._color;
             ctx.fillStyle = this._color;
@@ -234,6 +230,10 @@ var shapeModule = (function () {
         return Segment;
     }());
 
+    function isNumeric(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+    }
+
     return {
         Shape: Shape,
         Circle: Circle,
@@ -244,35 +244,79 @@ var shapeModule = (function () {
     };
 }());
 
-
-var circle = new shapeModule.Circle(210, 300, 62, '#1D4F73');
-console.log(circle.toString());
-
-var rectangle = new shapeModule.Rectangle(100, 33, 341, 35, '#7F2F1A');
-console.log(rectangle.toString());
-
-var triangle = new shapeModule.Triangle(45, 150, 100, 175, 110, 105, '#abc112');
-console.log(triangle.toString());
-
-var line = new shapeModule.Line(501, 600, 600, 100, '#FF6A6A');
-console.log(line.toString());
-
-var segment = new shapeModule.Segment(170, 140, 440, 200, '#cccccc');
-console.log(segment.toString());
-
-console.log(segment instanceof shapeModule.Shape);
+//var circle = new shapeModule.Circle(210, 100, 62, '#1D4F73');
+//console.log(circle.toString());
+//
+//var rectangle = new shapeModule.Rectangle(100, 33, 341, 35, '#7F2F1A');
+//console.log(rectangle.toString());
+//
+//var triangle = new shapeModule.Triangle(45, 150, 100, 175, 110, 105, '#abc112');
+//console.log(triangle.toString());
+//
+//var line = new shapeModule.Line(5, 5, 495, 25, '#FF6A6A');
+//console.log(line.toString());
+//
+//var segment = new shapeModule.Segment(170, 140, 440, 200, '#cccccc');
+//console.log(segment.toString());
+//
+//console.log(segment instanceof shapeModule.Shape);
 
 (function () {
-    var canvas = document.getElementById('canvas');
-    if (!canvas.getContext) {
-        console.log('Canvas is ussuported!');
-        return;
-    }
-    var ctx = canvas.getContext('2d');
-    circle.draw(ctx);
-    rectangle.draw(ctx);
-    triangle.draw(ctx);
-    line.draw(ctx);
-    segment.draw(ctx);
-}());
+    var select = document.getElementById('shape-select'),
+        addButton = document.getElementById('add'),
+        clearButton = document.getElementById('clear'),
+        shapeToAdd,
+        canvas = document.getElementById('canvas'),
+        ctx = canvas.getContext('2d');
 
+    select.addEventListener('change', function () {
+        var hiddenElements = document.getElementsByClassName('no'),
+            selectedShape = select.value;
+        Array.prototype.forEach.call(hiddenElements, function (e) {
+            e.style.display = 'none';
+        });
+        var shapeInputs = document.getElementsByClassName(selectedShape);
+        Array.prototype.forEach.call(shapeInputs, function (e) {
+            e.style.display = 'inline';
+        });
+    });
+
+    addButton.addEventListener('click', function () {
+        var selectedShape = select.value,
+            color = document.getElementById('color-input').value,
+            x = Number(document.getElementById('x').value),
+            y = Number(document.getElementById('y').value),
+            radius = Number(document.getElementById('radius').value) / 2,
+            width = Number(document.getElementById('width').value),
+            height = Number(document.getElementById('height').value),
+            x2 = Number(document.getElementById('x2').value),
+            y2 = Number(document.getElementById('y2').value),
+            x3 = Number(document.getElementById('x3').value),
+            y3 = Number(document.getElementById('y3').value);
+
+        switch (selectedShape) {
+            case 'circle':
+                shapeToAdd = new shapeModule.Circle(x, y, radius, color);
+                break;
+            case 'rectangle':
+                shapeToAdd = new shapeModule.Rectangle(x, y, width, height, color);
+                break;
+            case 'triangle':
+                shapeToAdd = new shapeModule.Triangle(x, y, x2, y2, x3, y3, color);
+                break;
+            case 'line':
+                shapeToAdd = new shapeModule.Line(x, y, x2, y2, color);
+                break;
+            case 'segment':
+                shapeToAdd = new shapeModule.Segment(x, y, x2, y2, color);
+                break;
+        }
+
+        shapeToAdd.draw(ctx);
+    });
+
+    clearButton.addEventListener('click', function () {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    });
+
+})();
