@@ -15,6 +15,18 @@ todoList.Section = (function (list) {
         this._title = title;
     }
 
+    function changeItemColor(event) {
+        var target = event.target;
+        console.log(target);
+        if (target.nodeName === 'LABEL' || target.nodeName === 'INPUT') {
+            if (target.checked) {
+                target.parentNode.style.backgroundColor = '#8DC63F';
+            } else {
+                target.parentNode.style.backgroundColor = '#fff';
+            }
+        }
+    }
+
     Section.prototype.createElement = function () {
         var section = document.createElement('section'),
             input = document.createElement('input'),
@@ -28,9 +40,7 @@ todoList.Section = (function (list) {
         button.innerText = '+';
         button.addEventListener('click', new list.Item().addToDom);
         ul.className = 'container';
-        ul.addEventListener('click', function (e) {
-            console.log(e);
-        });
+        ul.addEventListener('click', changeItemColor);
         h3.innerText = this._title;
         div.className = 'section-head-ul';
         div.appendChild(h3);
