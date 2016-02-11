@@ -1,0 +1,35 @@
+#wrapper {
+    font-family: Verdana, sans-serif;
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    border: 2px solid black;
+}
+
+#wrapper > h1 {
+    text-align: center
+}
+section {
+    text-align: right;
+}
+main, .section-head-ul {
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid black;
+}
+h3 {
+    margin-right: 10px;
+}
+.section-head-ul > ul {
+    list-style: none;
+}
+
+.section-head-ul > ul > li {
+    margin: 10px 0;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+button, input {
+    margin-left: 10px;
+}
