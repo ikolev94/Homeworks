@@ -1,4 +1,5 @@
 function Person(firstName, lastName) {
+    "use strict";
     this.firstName = firstName;
     this.lastName = lastName;
 
@@ -11,7 +12,7 @@ function Person(firstName, lastName) {
             this.firstName = nameArgs[0];
             this.lastName = nameArgs[1];
         }
-    })
+    });
 }
 
 var person = new Person('Peter', 'Jackson');

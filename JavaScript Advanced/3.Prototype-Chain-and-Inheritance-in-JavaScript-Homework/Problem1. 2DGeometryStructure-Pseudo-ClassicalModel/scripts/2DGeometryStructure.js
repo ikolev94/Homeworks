@@ -1,5 +1,3 @@
-"use strict";
-
 if (!Object.create) {
     Object.create = function (proto) {
         function F() {
@@ -11,12 +9,14 @@ if (!Object.create) {
 }
 
 Object.prototype.extends = function (parent) {
+    "use strict";
     this.prototype = Object.create(parent.prototype);
     this.prototype.constructor = this;
 };
 
 var shapeModule = (function () {
 
+    "use strict";
     var Shape = (function () {
         function Shape(color) {
             if (this.constructor === Shape) {
@@ -46,14 +46,14 @@ var shapeModule = (function () {
             Shape.call(this, color);
             this._centerX = centerX;
             this._centerY = centerY;
-            this.setRadius(radius)
+            this.setRadius(radius);
         }
 
         Circle.extends(Shape);
 
         Circle.prototype.setRadius = function (radius) {
             if (!isNumeric(radius)) {
-                throw new Error('Invalid radius (circle)')
+                throw new Error('Invalid radius (circle)');
             }
             this._radius = Number(radius);
         };
@@ -88,14 +88,14 @@ var shapeModule = (function () {
 
         Rectangle.prototype.setWidth = function (width) {
             if (!isNumeric(width)) {
-                throw new Error('invalid width (rectangle)')
+                throw new Error('invalid width (rectangle)');
             }
             this._width = Number(width);
         };
 
         Rectangle.prototype.setHeight = function (height) {
             if (!isNumeric(height)) {
-                throw new Error('invalid width (rectangle)')
+                throw new Error('invalid width (rectangle)');
             }
             this._height = Number(height);
         };
@@ -137,9 +137,10 @@ var shapeModule = (function () {
         };
 
         function isValidTriangle(aX, aY, bX, bY, cX, cY) {
-            var sideA = Shape.prototype.getDistanceBetweenPoints(aX, aY, bX, bY);
-            var sideB = Shape.prototype.getDistanceBetweenPoints(bX, bY, cX, cY);
-            var sideC = Shape.prototype.getDistanceBetweenPoints(aX, aY, cX, cY);
+            var sideA, sideB, sideC;
+            sideA = Shape.prototype.getDistanceBetweenPoints(aX, aY, bX, bY);
+            sideB = Shape.prototype.getDistanceBetweenPoints(bX, bY, cX, cY);
+            sideC = Shape.prototype.getDistanceBetweenPoints(aX, aY, cX, cY);
 
             if (sideA <= 0 || sideB <= 0 || sideC <= 0) {
                 return false;
@@ -150,7 +151,7 @@ var shapeModule = (function () {
             }
 
             return true;
-        };
+        }
 
         Triangle.prototype.draw = function (ctx) {
             ctx.fillStyle = this._color;

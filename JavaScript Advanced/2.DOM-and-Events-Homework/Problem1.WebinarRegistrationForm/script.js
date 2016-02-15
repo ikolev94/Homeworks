@@ -1,6 +1,8 @@
 (function () {
-    var checkBox = document.getElementById('invoice');
-    var div = document.getElementById('hidden');
+    "use strict";
+    var checkBox, div;
+    checkBox = document.getElementById('invoice');
+    div = document.getElementById('hidden');
     checkBox.addEventListener('click', function () {
         if (checkBox.checked) {
             div.style.visibility = 'visible';

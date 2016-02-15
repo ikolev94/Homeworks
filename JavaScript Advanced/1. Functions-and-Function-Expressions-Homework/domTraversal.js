@@ -1,12 +1,14 @@
 function traverse(selector) {
+    "use strict";
     var node = document.querySelector(selector);
     traverseNode(node, '');
     function traverseNode(node, spacing) {
-        for (var i = 0, len = node.childNodes.length; i < len; i += 1) {
-            var child = node.childNodes[i];
+        var i, child, len, nodeName, output;
+        for (i = 0, len = node.childNodes.length; i < len; i += 1) {
+            child = node.childNodes[i];
             if (child.nodeType === document.ELEMENT_NODE) {
-                var nodeName = (child.nodeName).toLowerCase();
-                var output = spacing + nodeName + ' : ';
+                nodeName = (child.nodeName).toLowerCase();
+                output = spacing + nodeName + ' : ';
                 output += child.id ? 'id=\"' + child.id + '\" ' : '';
                 output += child.className ? 'class=\"' + child.className + '\"' : '';
                 console.log(output);

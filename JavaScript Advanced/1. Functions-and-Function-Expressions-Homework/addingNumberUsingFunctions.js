@@ -1,13 +1,14 @@
 function add(a) {
-    var add = a;
+    "use strict";
+    var toAdd = a;
 
     function f(b) {
-        add += b;
-        return f
+        toAdd += b;
+        return f;
     }
 
     f.toString = function () {
-        return add
+        return toAdd;
     };
     return f;
 }

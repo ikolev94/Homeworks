@@ -1,9 +1,12 @@
 Object.prototype.extend = function (properties) {
+    "use strict";
+    var prop;
+
     function f() {
     }
 
     f.prototype = Object.create(this);
-    for (var prop in properties) {
+    for (prop in properties) {
         f.prototype[prop] = properties[prop];
     }
     f.prototype._super = this;

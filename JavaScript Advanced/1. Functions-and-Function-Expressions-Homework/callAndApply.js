@@ -1,5 +1,7 @@
 function printArgsInfo() {
-    for (var i = 0; i < arguments.length; i++) {
+    "use strict";
+    var i;
+    for (i = 0; i < arguments.length; i++) {
         console.log(arguments[i] + '(' + typeof arguments[i] + ')');
     }
 }

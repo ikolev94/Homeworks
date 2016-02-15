@@ -1,6 +1,6 @@
 Array.prototype.flatten = function () {
-    var result =[];
-    flatt(this);
+    "use strict";
+    var result = [];
 
     function flatt(arr) {
         arr.forEach(function (e) {
@@ -9,8 +9,9 @@ Array.prototype.flatten = function () {
             } else {
                 result.push(e);
             }
-        })
+        });
     }
+    flatt(this);
 
     return result;
 };

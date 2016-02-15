@@ -1,38 +1,43 @@
 String.prototype.startsWith = function (substring) {
+    "use strict";
     var regex = new RegExp('^' + substring);
     return regex.test(this);
 };
 
 String.prototype.endsWith = function (substring) {
+    "use strict";
     var regex = new RegExp(substring + '$');
     return regex.test(this);
 };
 
 String.prototype.left = function (count) {
-    var result = '';
+    "use strict";
+    var i, result = '';
     if (count > this.length) {
         count = this.length;
     }
-    for (var i = 0; i < count; i++) {
+    for (i = 0; i < count; i++) {
         result += this[i];
     }
     return result;
 };
 
 String.prototype.right = function (count) {
-    var result = '';
+    "use strict";
+    var result = '', length, start, i;
     if (count > this.length) {
         count = this.length;
     }
-    var length = this.length;
-    var start = length - count;
-    for (var i = start; i < length; i++) {
+    length = this.length;
+    start = length - count;
+    for (i = start; i < length; i++) {
         result += this[i];
     }
     return result;
 };
 
 String.prototype.padLeft = function (count, character) {
+    "use strict";
     var result = '',
         length = count - this.length,
         i;
@@ -50,6 +55,7 @@ String.prototype.padLeft = function (count, character) {
 };
 
 String.prototype.padRight = function (count, character) {
+    "use strict";
     var result = this + '',
         length = count - this.length,
         i;
@@ -67,8 +73,9 @@ String.prototype.padRight = function (count, character) {
 };
 
 String.prototype.repeat = function (count) {
-    var result = '';
-    for (var i = 0; i < count; i++) {
+    "use strict";
+    var result = '', i;
+    for (i = 0; i < count; i++) {
         result += this;
     }
     return result;
