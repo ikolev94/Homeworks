@@ -1,4 +1,20 @@
-var todoList = todoList || {},
-    list = new todoList.Container();
+(function () {
+    require.config({
+        paths: {
+            'notie': 'libs/notie',
+            'container': 'container',
+            'item': 'item',
+            'section': 'section'
+        }
+    })
+}());
 
-list.addToDom();
+require(['container'], function (Container) {
+    var list = new Container();
+    list.addToDom();
+});
+
+//var todoList = todoList || {},
+//    list = new todoList.Container();
+//
+//list.addToDom();
