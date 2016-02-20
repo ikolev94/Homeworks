@@ -25,6 +25,13 @@ input {
     display: none;
 }
 
-#clear {
+#clear-all {
     width: 20%;
+}
+#info-area {
+    max-width: 90%;
+    min-width: 90%;
+}
+#info-area-label{
+    display: block;
 }

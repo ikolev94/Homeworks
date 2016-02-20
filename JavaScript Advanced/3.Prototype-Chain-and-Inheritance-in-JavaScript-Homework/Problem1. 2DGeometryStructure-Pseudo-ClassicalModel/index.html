@@ -10,7 +10,7 @@
     <h1>Canvas Geometry API</h1>
     <h4>size range [1..500]</h4>
     <section>
-        <form action="">
+        <form>
             <label for="shape-select">Shape: </label>
             <select name="shape" id="shape-select">
                 <option value="circle">Circle</option>
@@ -44,11 +44,14 @@
             <input type="number" min="1" max="500" id="x3" class="triangle no">
             <label for="y3" class="triangle no">Y3:</label>
             <input type="number" min="1" max="500" id="y3" class="triangle no">
+            <label id="info-area-label" for="info-area">All shapes</label>
+            <select name="info-area" id="info-area" size="10"></select>
+            <button type="button" id="remove-shape">-</button>
         </form>
         <button id="add">Add</button>
         <canvas id="canvas" width="500" height="500"></canvas>
     </section>
-    <button id="clear">Clear</button>
+    <button id="clear-all">Clear All</button>
 </div>
 <script src="scripts/2DGeometryStructure.js"></script>
 </body>

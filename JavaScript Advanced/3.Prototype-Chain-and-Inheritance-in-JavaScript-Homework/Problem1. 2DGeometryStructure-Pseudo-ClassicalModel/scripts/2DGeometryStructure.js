@@ -8,15 +8,36 @@ if (!Object.create) {
     };
 }
 
-Object.prototype.extends = function (parent) {
+Function.prototype.extends = function (parent) {
     "use strict";
     this.prototype = Object.create(parent.prototype);
     this.prototype.constructor = this;
 };
 
 var shapeModule = (function () {
-
     "use strict";
+    var shapes = [];
+
+    function addShape(shape) {
+        shapes.push(shape);
+    }
+
+    function drawShapes(ctx) {
+        shapes.forEach(function (s) {
+            s.draw(ctx);
+        });
+    }
+
+    function removeShape(shapeToString) {
+        shapes = shapes.filter(function (s) {
+            return s.toString() !== shapeToString;
+        });
+    }
+
+    function removeAllShape() {
+        shapes = [];
+    }
+
     var Shape = (function () {
         function Shape(color) {
             if (this.constructor === Shape) {
@@ -67,8 +88,8 @@ var shapeModule = (function () {
 
         Circle.prototype.toString = function () {
             return Shape.prototype.toString.call(this) +
-                ' center X = ' + this._centerX + ' center Y = ' +
-                this._centerY + ' radius = ' + this._radius;
+                ' Center = (' + this._centerX + ', ' +
+                this._centerY + ') radius = ' + this._radius;
         };
 
         return Circle;
@@ -108,8 +129,8 @@ var shapeModule = (function () {
         Rectangle.prototype.toString = function () {
 
             return Shape.prototype.toString.call(this) +
-                ' top left X = ' + this._topLeftX + ' top left Y = ' +
-                this._topLeftY + ' width = ' + this._width + ' height = ' + this._height;
+                ' top left = (' + this._topLeftX + ', ' +
+                this._topLeftY + ') size = [' + this._width + ', ' + this._height + ']';
         };
 
         return Rectangle;
@@ -236,6 +257,10 @@ var shapeModule = (function () {
     }
 
     return {
+        addShape: addShape,
+        drawShapes: drawShapes,
+        removeShape: removeShape,
+        removeAllShapes: removeAllShape,
         Shape: Shape,
         Circle: Circle,
         Rectangle: Rectangle,
@@ -265,7 +290,9 @@ var shapeModule = (function () {
 (function () {
     var select = document.getElementById('shape-select'),
         addButton = document.getElementById('add'),
-        clearButton = document.getElementById('clear'),
+        clearButton = document.getElementById('clear-all'),
+        removeShapeButton = document.getElementById('remove-shape'),
+        infoArea = document.getElementById('info-area'),
         shapeToAdd,
         canvas = document.getElementById('canvas'),
         ctx = canvas.getContext('2d');
@@ -293,7 +320,8 @@ var shapeModule = (function () {
             x2 = Number(document.getElementById('x2').value),
             y2 = Number(document.getElementById('y2').value),
             x3 = Number(document.getElementById('x3').value),
-            y3 = Number(document.getElementById('y3').value);
+            y3 = Number(document.getElementById('y3').value),
+            option = document.createElement('option');
 
         switch (selectedShape) {
             case 'circle':
@@ -312,12 +340,31 @@ var shapeModule = (function () {
                 shapeToAdd = new shapeModule.Segment(x, y, x2, y2, color);
                 break;
         }
+        shapeModule.addShape(shapeToAdd);
+        option.textContent = shapeToAdd.toString();
+        infoArea.add(option);
+        shapeModule.drawShapes(ctx);
+    });
 
-        shapeToAdd.draw(ctx);
+    removeShapeButton.addEventListener('click', function () {
+        var item = infoArea.value;
+        if (item) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            shapeModule.removeShape(item);
+            infoArea.remove(infoArea.selectedIndex);
+            for (var i = 0; i < infoArea.length; i++) {
+                infoArea[i].selected = false;
+            }
+            shapeModule.drawShapes(ctx);
+        }
     });
 
     clearButton.addEventListener('click', function () {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+        shapeModule.removeAllShapes();
+        while (infoArea[0]) {
+            infoArea.remove(infoArea[0]);
+        }
     });
 
 })();
