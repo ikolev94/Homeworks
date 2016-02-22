@@ -153,7 +153,7 @@ var shapeModule = (function () {
                 this._cX = cX;
                 this._cY = cY;
             } else {
-                console.error('Invalid coordinates (triangle)');
+                throw new Error('Invalid coordinates (triangle)');
             }
         };
 
