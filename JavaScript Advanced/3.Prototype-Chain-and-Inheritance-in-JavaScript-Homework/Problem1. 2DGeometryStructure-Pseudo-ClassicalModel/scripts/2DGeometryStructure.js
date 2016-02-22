@@ -215,7 +215,7 @@ var shapeModule = (function () {
         Line.prototype.toString = function () {
             return Shape.prototype.toString.call(this) +
                 " A(" + this._aX + ", " + this._aY + ")," +
-                " B(" + this._bX + ", " + this._bY + "), ";
+                " B(" + this._bX + ", " + this._bY + ")";
         };
 
         return Line;
