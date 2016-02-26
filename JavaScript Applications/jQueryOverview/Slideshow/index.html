@@ -5,41 +5,41 @@
     <title>Slideshow</title>
     <style>
         #wrapper {
-            width: 250px;
-            margin: 25px auto;
+            margin: 50px auto;
+            text-align: center;
         }
 
-        #images {
-            position: relative;
-            height: 300px;
-            width: 250px;
+        #wrapper div {
+            vertical-align: middle;
         }
 
-        #images img {
-            position: absolute;
-            z-index: 1;
-            width: 250px;
-            height: 250px;
-            padding: 10px;
-            box-shadow: 0 0 20px gray;
+        #right, #left, #images-container {
+            display: inline-block;
         }
-        button{
-            margin-left: 70px;
+
+        #right, #left {
+            font-size: 45px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 100px;
+            height: 150px;
         }
 
     </style>
 </head>
 <body>
 <div id="wrapper">
-    <div id="images">
-        <img src="images/1.jpg">
-        <img src="images/2.jpg">
-        <img src="images/3.jpg"/>
-        <img src="images/4.jpg"/>
-        <img src="images/5.jpg"/>
+    <a id="left">⇐</a>
+    <div id="images-container">
+        <img id="image1" src="images/1.jpg" alt="1">
+        <img id="image2" src="images/2.jpg" alt="2">
+        <img id="image3" src="images/3.jpg" alt="3">
+        <img id="image4" src="images/4.jpg" alt="4">
+        <img id="image5" src="images/5.jpg" alt="5">
     </div>
-    <button id="previous"><--</button>
-    <button id="next">--></button>
+    <a id="right">⇒</a>
 </div>
 <script src="../jquery.min.js"></script>
 <script src="slideshow.js"></script>
