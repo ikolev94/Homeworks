@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slideshow</title>
+    <style>
+        #wrapper {
+            width: 250px;
+            margin: 25px auto;
+        }
+
+        #images {
+            position: relative;
+            height: 300px;
+            width: 250px;
+        }
+
+        #images img {
+            position: absolute;
+            z-index: 1;
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+            box-shadow: 0 0 20px gray;
+        }
+        button{
+            margin-left: 70px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="images">
+        <img src="images/1.jpg">
+        <img src="images/2.jpg">
+        <img src="images/3.jpg"/>
+        <img src="images/4.jpg"/>
+        <img src="images/5.jpg"/>
+    </div>
+    <button id="previous"><--</button>
+    <button id="next">--></button>
+</div>
+<script src="../jquery.min.js"></script>
+<script src="slideshow.js"></script>
+</body>
+</html>
