@@ -17,17 +17,14 @@
         localStorage['username'] = usernameInput.val();
 
         updateSectionStorage();
-
-        if (!localStorage['totalVisits']) {
-            localStorage['totalVisits'] = 0;
-        }
+        updateLocalStorage();
     });
 
     if (localStorage['username']) {
         updateSectionStorage();
-        message = 'Hello, ' + localStorage.username + '!';
+        message = 'Greetings, ' + localStorage.username + ' !';
         info = $('<p>').text('Total visits: '
-            + localStorage.totalVisits + ' / Session visits: '
+            + localStorage.totalVisits + ' | Session visits: '
             + sessionStorage['sessionVisits']);
 
         usernameInput.hide();
@@ -38,7 +35,7 @@
 
         $('div').text(message)
             .css({
-                'background': 'green'
+                'background': '#33FF33'
                 , 'background-image': 'url(star-trek.jpg)'
                 , 'background-repeat': 'no-repeat'
             });
@@ -47,8 +44,14 @@
 
 
     function updateSectionStorage() {
-        if (typeof (sessionStorage['sessionVisits']) !== 'string' || isNaN(sessionStorage['sessionVisits'])) {
+        if (isNaN(sessionStorage['sessionVisits'])) {
             sessionStorage['sessionVisits'] = 0;
+        }
+    }
+
+    function updateLocalStorage() {
+        if (isNaN(localStorage['totalVisits'])) {
+            localStorage['totalVisits'] = 0;
         }
     }
 }());
