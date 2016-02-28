@@ -15,6 +15,7 @@
         seconds,
         time,
         idOfCheckedInput,
+        checkedInputs,
         FIVE_MINUTES = 5,
         correctAnswers = {
             'question-0': 'third-answer-0',
@@ -83,9 +84,26 @@
             time = getTimeRemaining(endTime);
             clock.innerHTML = 'Time (' + time.minutes + ':' + time.seconds + ')';
             if (time.total <= 0) {
+                $('button').trigger('click');
                 clearInterval(timeInterval);
             }
         }, 1000);
+    }
+
+    function resetForm(checkedInputs) {
+        localStorage.clear();
+        checkedInputs.attr("checked", false);
+        location.reload();
+    }
+
+    function showResults(checkedInputs) {
+        clearInterval(timeInterval);
+        checkedInputs.each(function () {
+            this.nextSibling.style.background = 'red';
+            $('#' + correctAnswers[this.name]).next().css('background', '#00FF7F');
+        });
+        $('input').hide();
+        $('label').css({'margin': '10px', 'padding': '5px'});
     }
 
     $('<form style="text-align: center">')
@@ -96,16 +114,13 @@
             createQuestion(['There are 12 pens on the table, you took 3, how many do you have?', '2', '12', '3', 'PI']),
             createQuestion(['Finish the sentence, Gym is to Healthy as Book is to ?', 'Smart', 'Intelligent', 'Knowledgeable', 'Good']),
             $('<button type="button">').text('Submit').on('click', function () {
-                clearInterval(timeInterval);
-                $("input:not(:checked)").hide().next().hide();
-                $('input:checked').each(function () {
-                    if (correctAnswers[this.name] === this.id) {
-                        this.parentNode.style.background = 'green';
-                    } else {
-                        $('#' + correctAnswers[this.name]).show().next().show();
-                        this.parentNode.style.background = 'red';
-                    }
-                });
+                checkedInputs = $('input:checked');
+                if (this.innerHTML === 'Reset') {
+                    resetForm(checkedInputs);
+                } else {
+                    showResults(checkedInputs);
+                    $(this).text('Reset').attr('type', 'reset');
+                }
             }))
         .appendTo(document.body);
 
@@ -122,6 +137,6 @@
         $('input:checked').each(function () {
             localStorage[this.name] = this.id;
         });
-    })
+    });
 
 }());
