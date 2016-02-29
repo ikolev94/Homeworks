@@ -100,7 +100,9 @@
         clearInterval(timeInterval);
         checkedInputs.each(function () {
             this.nextSibling.style.background = 'red';
-            $('#' + correctAnswers[this.name]).next().css('background', '#00FF7F');
+        });
+        Object.keys(correctAnswers).forEach(function (key) {
+            $('#' + correctAnswers[key]).next().css('background', '#00FF7F');
         });
         $('input').hide();
         $('label').css({'margin': '10px', 'padding': '5px'});
