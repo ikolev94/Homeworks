@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <style>
+        .hidden {
+            visibility: hidden;
+        }
+
+        .overlay {
+            background: rgba(33, 29, 25, 0.44);
+            visibility: visible; !important;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <label for="books">Books</label><br>
+    <select style="min-width: 20%; display: block" size="5" id="books"></select>
+    <button id="add-button">Add Book</button>
+    <button id="edit-button">Edit Book</button>
+    <button id="delete-button">Delete Book</button>
+    <div id="pop" class="hidden">
+        <input id="new-title" type="text" placeholder="New title"><br>
+        <input id="new-author" type="text" placeholder="New author"><br>
+        <input id="new-isbn" type="text" placeholder="New isbn"><br>
+        <button id="submit">Submit</button>
+        <button id="cancel">Cancel</button>
+    </div>
+</div>
+<script src="book.js"></script>
+</body>
+</html>
