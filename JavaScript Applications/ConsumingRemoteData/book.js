@@ -70,12 +70,14 @@ $(document).ready(function () {
     }
 
     function listBooks(data) {
+        var fragment = $(document.createDocumentFragment());
         data.forEach(function (book) {
             sessionStorage[book.title] = book._id;
-            booksSelect.append(
+            fragment.append(
                 $('<option>')
                     .attr('id', book.title)
-                    .text(book.title + ' => ' + book.author));
+                    .text(book.title + '--->' + book.author + '--->' + book.isbn));
         });
+        booksSelect.append(fragment);
     }
 });
