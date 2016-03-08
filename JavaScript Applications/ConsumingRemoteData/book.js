@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     function updateBooks() {
         booksSelect.empty();
-        makeRequest('GET', listBooks, '');
+        makeRequest('GET', listBooks, '?query={}&sort=title');
     }
 
     function listBooks(data) {
@@ -42,7 +42,7 @@ $(document).ready(function () {
         });
         booksSelect.append(fragment);
     }
-    
+
     function deleteOption() {
         $('option:selected').remove();
     }
