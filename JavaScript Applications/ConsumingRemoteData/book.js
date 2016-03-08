@@ -16,7 +16,38 @@ $(document).ready(function () {
         },
         BOOKS_URL = 'https://baas.kinvey.com/appdata/kid_W1D-ZR7pCl/books/';
 
-    makeRequest('GET', listBooks, '');
+    function makeRequest(method, callback, id) {
+        $.ajax({
+            method: method,
+            headers: headers,
+            url: BOOKS_URL + id,
+            data: JSON.stringify({'title': title, 'author': author, 'isbn': isbn}),
+            success: callback
+        })
+    }
+
+    function updateBooks() {
+        booksSelect.empty();
+        makeRequest('GET', listBooks, '');
+    }
+
+    function listBooks(data) {
+        var fragment = $(document.createDocumentFragment());
+        data.forEach(function (book) {
+            sessionStorage[book.title] = book._id;
+            fragment.append(
+                $('<option>')
+                    .attr('id', book.title)
+                    .text(book.title + '--->' + book.author + '--->' + book.isbn));
+        });
+        booksSelect.append(fragment);
+    }
+    
+    function deleteOption() {
+        $('option:selected').remove();
+    }
+
+    updateBooks();
 
     $('#add-button').click(function () {
         toAdd = true;
@@ -34,13 +65,14 @@ $(document).ready(function () {
     $('#submit').click(function () {
         title = newTitleInput.val() || 'book' + id;
         author = newAuthorInput.val() || 'author' + id;
-        isbn = newIsbnInput.val() || 'isbn' + id;
+        isbn = newIsbnInput.val() || 'isbn' + id++;
         if (toAdd) {
             toAdd = false;
-            makeRequest('POST', reset, '');
+            makeRequest('POST', updateBooks, '');
         } else {
-            makeRequest('PUT', reset, sessionStorage[$('option:selected').attr('id')]);
+            makeRequest('PUT', updateBooks, sessionStorage[$('option:selected').attr('id')]);
         }
+        pop.removeClass('overlay').addClass('hidden');
     });
 
     $('#cancel').click(function () {
@@ -49,35 +81,9 @@ $(document).ready(function () {
 
     $('#delete-button').click(function () {
         if (booksSelect.val()) {
-            makeRequest('DELETE', reset, sessionStorage[$('option:selected').attr('id')])
+            makeRequest('DELETE', deleteOption, sessionStorage[$('option:selected').attr('id')])
         } else {
             alert('Select book.');
         }
     });
-
-    function makeRequest(method, callback, id) {
-        $.ajax({
-            method: method,
-            headers: headers,
-            url: BOOKS_URL + id,
-            data: JSON.stringify({'title': title, 'author': author, 'isbn': isbn}),
-            success: callback
-        })
-    }
-
-    function reset() {
-        location.reload();
-    }
-
-    function listBooks(data) {
-        var fragment = $(document.createDocumentFragment());
-        data.forEach(function (book) {
-            sessionStorage[book.title] = book._id;
-            fragment.append(
-                $('<option>')
-                    .attr('id', book.title)
-                    .text(book.title + '--->' + book.author + '--->' + book.isbn));
-        });
-        booksSelect.append(fragment);
-    }
 });
