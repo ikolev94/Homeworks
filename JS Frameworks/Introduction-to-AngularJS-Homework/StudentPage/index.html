@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="studentApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+</head>
+<body>
+<div ng-controller="studentController">
+<h2>Name: {{student.name}}</h2>
+    <img ng-src="{{student.photo}}" alt="Photo">
+    <h3>Grade: {{student.grade}}</h3>
+    <h3>School: {{student.school}}</h3>
+    <h3>Teacher: {{student.teacher}}</h3>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
