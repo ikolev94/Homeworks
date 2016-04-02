@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="videoSystem" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.5.3/angular-route.min.js"></script>
+</head>
+
+<body>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#/home">Home</a></li>
+    <li role="presentation"><a href="#/add-video">Add video</a></li>
+    <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer" role="button"
+           aria-haspopup="true" aria-expanded="false">
+            Sort by <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#">title</a></li>
+            <li><a href="#">length</a></li>
+            <li><a href="#">date</a></li>
+            <li><a href="#">likes</a></li>
+        </ul>
+    </li>
+</ul>
+
+<div ng-view></div>
+
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/services/videoService.js"></script>
+<script type="text/javascript" src="js/home/home.js"></script>
+<script type="text/javascript" src="js/addVideo/addVideo.js"></script>
+</body>
+</html>
