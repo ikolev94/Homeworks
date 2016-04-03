@@ -14,8 +14,19 @@ angular.module('videoSystem.home', ['ngRoute'])
             function (data) {
                 $scope.videos = data;
             },
-            function (error, status, headers, config) {
+            function (error, status) {
                 console.log(status, error);
             });
+
+        $scope.getDate = function (d) {
+            if (d) {
+                $scope.filterBy = {date: {}};
+                $scope.filterBy.date = d.toISOString();
+            }
+        };
+
+        $scope.formatDate = function (date) {
+            $scope.filterBy.date = date.toISOString();
+        }
 
     }]);

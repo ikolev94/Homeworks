@@ -11,16 +11,32 @@
 </div>
 <div class="form-group">
     <div class="col-lg-2">
-        <select class="form-control" ng-model="filterCriteria">
+        <select class="form-control" ng-model="filter">
             <option selected disabled value="">Filter by:</option>
             <option value="category">Category</option>
             <option value="date">Date</option>
             <option value="haveSubtitles">Have Subtitles</option>
         </select>
     </div>
+    <div class="col-lg-2" ng-show="filter === 'category'">
+        <select class="form-control" ng-model="filterBy.category">
+            <option selected disabled value="">select category</option>
+            <option ng-repeat="video in videos" value="{{video.category}}">{{video.category}}</option>
+        </select>
+    </div>
+    <div class="col-lg-2" ng-show="filter === 'haveSubtitles'">
+        <select class="form-control" ng-model="filterBy.haveSubtitles">
+            <option selected disabled value="">Select Yes or No</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+    </div>
+    <div class="col-lg-2" ng-show="filter === 'date'">
+        <input class="form-control" ng-model="a" ng-change="getDate(a)" type="date">
+    </div>
 </div>
 <div class="col-lg-12 videos">
-    <article ng-repeat="video in videos | orderBy : sortOrder | filter : filterCriteria">
+    <article ng-repeat="video in videos | orderBy: sortOrder | filter : filterBy">
         <a href="#/video/{{video._id}}">
             <div class="media-list">
                 <div class="col-sm-6 col-md-4">
@@ -30,10 +46,11 @@
                         <div class="caption">
                             <p>length: {{video.length | number: 0}} min</p>
                             <p>category: {{video.category}}</p>
-                            <p>subscribers: {{video.subscribers||0 | number: 0}}</p>
+                            <p>subscribers: {{video.subscribers | number: 0}}</p>
                             <p>date: {{video.date||'No date' | date : "dd MMMM yyyy"}}</p>
                             <p>have subtitles: {{video.haveSubtitles?'Yes':'No'}}</p>
                         </div>
+                        <p class="btn-info">See more</p>
                     </div>
                 </div>
             </div>

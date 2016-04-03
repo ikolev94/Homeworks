@@ -25,13 +25,8 @@ angular.module('videoSystem.addVideo', ['ngRoute'])
         $scope.addVideo = function (data) {
             if (validateVideo(data)) {
                 data.comments = [];
-                data.comments.push(
-                    {
-                        "username": "LOrka",
-                        "data": new Date(),
-                        "content": "NAI Qkoto !!! le",
-                        "picture": "http://www.eurogeosurveys.org/wp-content/uploads/2014/02/default_profile_pic.jpg"
-                    });
+                data.haveSubtitles = data.haveSubtitles || false;
+                data.subscribers = data.subscribers || 0;
                 videoService.addVideo(data, function (s) {
                     console.log(s);
                     $location.path('/home');
