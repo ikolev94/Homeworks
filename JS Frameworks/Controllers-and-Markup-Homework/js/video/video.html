@@ -1,0 +1,38 @@
+<article>
+    <div class="media-list">
+        <div class="col-sm-6 col-md-8">
+            <div class="thumbnail">
+                <h2 style="text-align: center">{{video.title}}</h2>
+                <img ng-src="{{video.picture}}" style="width: 90%; max-height: inherit">
+                <div class="caption">
+                    <p>length: {{video.length | number: 0}} min</p>
+                    <p>category: {{video.category}}</p>
+                    <p>subscribers: {{video.subscribers | number: 0}}</p>
+                    <p>date: {{video.date | date : "dd MMM yyyy"}}</p>
+                    <p>have subtitles: {{video.haveSubtitles}}</p>
+                </div>
+                <div class="comments">
+                    <h3>Add Comment</h3>
+                    <form class="add-comment container" name="addCommentForm" ng-submit="addComment(video)">
+                        <input type="text" class="form-control" placeholder="Username" ng-model="newComment.username"
+                               required>
+                        <textarea name="content" class="form-control" placeholder="Content"
+                                  ng-model="newComment.content" required></textarea>
+                        <input type="url" class="form-control" ng-model="newComment.picture" placeholder="Image src">
+                        <button type="submit" class="btn btn-default" ng-disabled="addCommentForm.$invalid">Submit
+                        </button>
+                    </form>
+                    <h3>Comments: </h3>
+                    <hr>
+                    <div class="comment" ng-repeat="comment in video.comments">
+                        <p>By: <strong>{{comment.username}}</strong></p>
+                        <img ng-src="{{comment.picture}}" alt="">
+                        <p>Content: <strong> {{comment.content}}</strong></p>
+                        <p>Date: <strong>{{comment.date | date: 'medium'}}</strong></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

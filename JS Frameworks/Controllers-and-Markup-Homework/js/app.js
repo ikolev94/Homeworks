@@ -1,8 +1,13 @@
 'use strict';
 
-var app = angular.module('videoSystem', ['ngRoute', 'videoSystem.home', 'videoSystem.addVideo'])
+var app = angular.module('videoSystem', [
+        'ngRoute',
+        'videoSystem.home',
+        'videoSystem.addVideo',
+        'videoSystem.video'])
+    
     .constant('BAAS', {
-        "VIDEOS_URL": 'https://baas.kinvey.com/appdata/kid_W1D-ZR7pCl/videos',
+        "VIDEOS_URL": 'https://baas.kinvey.com/appdata/kid_W1D-ZR7pCl/videos/',
         "HEADERS": {
             'Authorization': 'Basic cXVlc3Q6cXVlc3Q=',
             'Content-Type': 'application/json'

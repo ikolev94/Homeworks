@@ -2,7 +2,7 @@
     <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
     <strong>ERROR!</strong> {{invalidVideo}}
 </div>
-<form class="form-horizontal" id="video-add" name="videoAdd" ng-submit="addVideo(newVideo)">
+<form class="form-horizontal" id="video-add" name="videoAddTest" ng-submit="addVideo(newVideo)">
     <div class="form-group">
         <label for="inputTitle" class="control-label col-sm-2">*Title</label>
         <div class="col-sm-4">
@@ -28,7 +28,7 @@
     <div class="form-group">
         <label for="inputLength" class="col-sm-2 control-label">*Length</label>
         <div class="col-sm-4">
-            <input name="length" ng-model="newVideo.length" min="1" ng-pattern="/^[1-9]{1}\d*$/i"
+            <input name="length" ng-model="newVideo.length" ng-pattern="/^[1-9]{1}\d*$/i"
                    type="number" class="form-control" id="inputLength" placeholder="Length / minutes" required>
         </div>
     </div>
@@ -40,16 +40,16 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="inputSubscribers" class="col-sm-2 control-label">*Subscribers</label>
+        <label for="inputSubscribers" class="col-sm-2 control-label">Subscribers</label>
         <div class="col-sm-4">
-            <input name="subscribers" ng-pattern="/^[0-9]+$/i" min="0" ng-model="newVideo.subscribers" type="number"
+            <input name="subscribers" ng-pattern="/^[0-9]+$/i" ng-model="newVideo.subscribers" type="number"
                    class="form-control" id="inputSubscribers" placeholder="Subscribers">
         </div>
     </div>
     <div class="form-group">
-        <label for="inputDate" class="col-sm-2 control-label">*Date</label>
+        <label for="inputDate" class="col-sm-2 control-label">Date</label>
         <div class="col-sm-4">
-            <input ng-model="newVideo.date" type="date" class="form-control" id="inputDate" required>
+            <input ng-model="newVideo.date" type="date" class="form-control" id="inputDate">
         </div>
     </div>
     <div class="form-group">
@@ -63,7 +63,7 @@
     </div>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default" ng-disabled="videoAdd.$invalid">Add movie</button>
+            <button type="submit" class="btn btn-default" ng-disabled="videoAddTest.$invalid">Add</button>
         </div>
     </div>
 </form>
