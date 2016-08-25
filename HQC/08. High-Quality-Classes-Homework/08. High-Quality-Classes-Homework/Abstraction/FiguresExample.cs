@@ -2,9 +2,9 @@
 {
     using System;
 
-    internal class FiguresExample
+    public class FiguresExample
     {
-        private static void Main()
+        public static void Main()
         {
             Circle circle = new Circle(5);
             Console.WriteLine(

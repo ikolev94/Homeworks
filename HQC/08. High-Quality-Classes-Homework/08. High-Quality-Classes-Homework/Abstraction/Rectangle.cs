@@ -2,7 +2,7 @@
 {
     using System;
 
-    internal class Rectangle : IFigure
+    public class Rectangle : IFigure
     {
         private double _width;
 

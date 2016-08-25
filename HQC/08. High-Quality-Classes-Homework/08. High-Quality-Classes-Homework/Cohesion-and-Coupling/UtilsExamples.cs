@@ -2,9 +2,9 @@
 {
     using System;
 
-    internal class UtilsExamples
+    public class UtilsExamples
     {
-        private static void Main()
+        public static void Main()
         {
             Console.WriteLine(File.GetFileExtension("example"));
             Console.WriteLine(File.GetFileExtension("example.pdf"));

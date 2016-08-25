@@ -23,7 +23,7 @@
             int indexOfLastDot = path.LastIndexOf(".", StringComparison.Ordinal);
             if (indexOfLastDot == -1)
             {
-                throw new ArgumentException();
+                return path.Length - 1;
             }
 
             return indexOfLastDot;

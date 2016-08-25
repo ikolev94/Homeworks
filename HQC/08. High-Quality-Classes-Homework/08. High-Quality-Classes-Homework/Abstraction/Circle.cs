@@ -2,7 +2,7 @@
 {
     using System;
 
-    internal class Circle : IFigure
+    public class Circle : IFigure
     {
         private double _radius;
 
