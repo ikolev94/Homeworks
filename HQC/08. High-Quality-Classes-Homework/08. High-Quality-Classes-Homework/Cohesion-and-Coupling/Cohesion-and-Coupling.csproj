@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="File.cs" />
     <Compile Include="UtilsExamples.cs" />
-    <Compile Include="Demension.cs" />
+    <Compile Include="Dimension.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

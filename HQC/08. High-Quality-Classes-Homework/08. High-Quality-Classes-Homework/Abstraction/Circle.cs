@@ -2,22 +2,41 @@
 {
     using System;
 
-    internal class Circle : Figure
+    internal class Circle : IFigure
     {
+        private double _radius;
+
         public Circle(double radius)
-            : base(radius, 0)
         {
+            this.Radius = radius;
         }
 
-        public override double CalcPerimeter()
+        public double Radius
         {
-            double perimeter = 2 * Math.PI * this.Width;
+            get
+            {
+                return this._radius;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Radius cannot be negative");
+                }
+
+                this._radius = value;
+            }
+        }
+
+        public double CalcPerimeter()
+        {
+            double perimeter = 2 * Math.PI * this.Radius;
             return perimeter;
         }
 
-        public override double CalcSurface()
+        public double CalcSurface()
         {
-            double surface = Math.PI * this.Width * this.Width;
+            double surface = Math.PI * this.Radius * this.Radius;
             return surface;
         }
     }
